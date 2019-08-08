@@ -1,0 +1,749 @@
+/* Custom Style Sheet - sk 20-3-2017  */
+.content-conatiner{background-color: #f5f5f5;}
+.bar-header{background-color:transparent ;color:#fff ;}
+.bar.bar-stable .title{color:#fff;}
+.top-head{background-color:#ef473a;color:#fff;}
+.space-page{margin:20px 0;}
+.spc{margin-bottom:10px;}
+a{text-decoration:none;}
+.spc-top{margin-top:20%;}
+.title-in h1,h4{margin-bottom:5%; font-weight:normal;}
+.title-in h1{color: #cd2d25;}
+.main-title{width:100%; margin:0 auto;text-align:center; margin-bottom:20%; font-weight:normal;}
+.main-title .title{color:#cd2d25;}.main-title .sub-title{color:#565656; font-weight:normal;}
+.clear-border .item{border:0; background-color:transparent;background-image:none;margin-top: -8%;}
+.top-btn .button-positive{float:right !important;}
+.list-btn .button-small{float:right;padding: 0px 14px 4px 14px;}
+.card-section{margin-top:10px; margin-bottom:10px;}
+.word-step{word-wrap:scroll;}
+/*.list-txt-rt{font-weight:normal !important;padding: 6px 10px;right: 10px !important;}
+.list-txt-rt i{padding-right:10px;}*/
+.list-btn p>i{padding-right:10px;}
+
+.dash-menu{height:55px;width:75px;margin-bottom: 8px; margin-top:0px;}
+.card >i{font-size: 22px;color: #fff;top: 26%;position: relative;}
+
+/*Font-variations icon */
+.icon-dark{color:#666;}
+.icon-white{color:#fff;}
+.large{font-size:15px;}
+.xlarge{font-size:20px;}
+.xxlarge{font-size:30px;}
+.xxxlarge{font-size:40px;}
+.para{font-size: 20px;
+    text-align: center;
+	padding-top: 70%;}
+.back{background: url('../img/img-bg.png') no-repeat center}
+.toptext{
+	position: relative;
+    right: 5%;
+	color: #e42112;
+}
+.tengent{
+	background: #8fef3a;
+	    margin-left: 25px;
+}
+.editicon{
+   font-size: 20px;
+    margin-top: 20%;
+    position: relative;
+    right:50%;
+}
+.cardsize{height: 60px;
+    width: 80%;
+	color:#fafafa;}
+.iconlength{
+	position: relative;
+    left: 40%;
+    font-size: 20px;
+	top: 5px;
+}
+.cardmargin{
+ margin: 5px 10px !important;
+}
+.iconlength1{
+	position: relative;
+    left: 40%;
+    font-size: 20px;
+}
+.contenttext{
+  padding-top: 10%;
+  padding-right: 10%;
+   padding-left: 10%;
+}
+.cardtext{
+	font-size: 11px;
+    position: relative;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    line-height: 11px;
+}
+.adminbutton{
+	 width: 94% !important;
+    position: relative;
+    left: 3%;
+}
+.cardtextadmin{
+	font-size: 11px;
+    position: relative;
+    left: 5%;
+    width: 100%;
+    text-align: center;
+    line-height: 11px;
+}
+.cardtext1{
+	font-size: 10px;
+    position: relative;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    line-height: 11px;
+}
+.green{
+	background:#28a54c;
+}
+.red{
+	background:red;
+}
+.blue{
+	background:blue;
+}
+.pink{
+	background:#6b46e5;;
+}
+.yellow{
+	background:#d76aea;
+}
+.cyan{
+	background:rgba(0, 0, 0, 0.5);;
+}
+.cyan2{
+	background:#11c1f3;
+}
+.green{
+	background: #28a54c;
+}
+.black{
+	background: #a2a2a2;
+}
+.transparent{
+	background: #ef8f3a;
+}
+.transparent2{
+	background:rgba(0, 0, 0, 0.5);
+}
+.arrowleft{
+  font-size: 25px;
+    padding-top: 2%;
+}
+.middleinput{
+	    position: relative;
+    left: 20%;
+}
+.location{
+	width: 60%;
+    position: relative;
+    left: 25%;
+}
+.labelheight{
+	    margin-top: 17%;
+    position: relative;
+    right: 35%;
+}
+.para1{font-size: 20px;
+    text-align: center;
+	padding-top: 20%;
+    font-weight: bold;}
+.toplabel{
+	    width: 30%;
+    height: 10px;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+}
+.middlelabel{height: 30px;
+    border: 1px solid #aaaaaa;}
+.selectposition{
+	right: 30%;
+    position: relative;
+}
+.buttonheight{
+	    height: 20px;
+}
+
+.para2{font-size: 20px;
+    text-align: center;
+	padding-top: 0%;
+    font-weight: bold;}
+.topfont{
+	color:red; text-align:center;padding-top: 5%;
+}
+.paratop{
+	padding-top: 10%;
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+.paramiddle{
+  text-align: center;
+    font-size: 15px;
+    padding-top: 15%;
+	width:120%;
+	position: relative;
+    right: 10%;
+}
+.parabottom{
+	position: relative;
+    padding-top: 10%;
+    left: 7%;
+    color: red;
+}
+.onlyinput{
+	background:white !important;
+    position: relative  !important;
+    right: 2% !important ;
+}
+.buttonbottom{
+	left: 20%;
+    width: 60%;
+}
+select, options {width:100%;height:50px;}
+.paradown{
+	text-align: center;
+    padding-top: 0%;
+    color: red;
+}
+.paralist{    font-size: 15px;
+    text-align: center;
+   margin-top: -2%;
+    font-weight: bold;
+    color: #ef473a;}
+.amounttop{
+	color: green;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4%;
+    font-size: 18px;
+}
+.profiletext{
+	font-size: 10px;
+    position: relative;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    line-height: 11px;
+}
+.profilestext{
+	font-size: 11px;
+    position: relative;
+    left: 10%;
+    width: 160%;
+}
+.labelborder{
+	border: 1px solid #b2b2b2;
+}
+.listitem{
+	background:#e5e5e5 !important ;
+	border-bottom: 1px solid;
+}
+.heading{
+	margin:0;
+	position: relative;
+    left:25%;
+    color: #fafafa;
+	margin-top:0%;
+	font-size:25px !important ;
+}
+.heading1{
+	margin:0;
+	position: relative;
+    left: 10%;
+    color: #fafafa;
+	margin-top:-3%;
+}
+.heading2{
+	margin:0;
+	position: relative;
+    left: 12%;
+    color: #fafafa;
+	margin-top:-2%;
+}
+.headingprofile{
+	margin:0;
+	position: relative;
+    left: 10%;
+    color: #fafafa;
+	margin-top:-2%;
+}
+.listingpara{font-size: 20px;
+    text-align: center;
+	padding-top: 10%;
+    right: 30%;}
+.itemborder{
+	border-bottom: 1px solid;
+	margin:0px;
+	height: 60px;
+}
+.wrap{
+	position: absolute !important;
+    top: 32.6% !important;
+    right: 0% !important;
+    background: rgba(0, 0, 0, 0.34)!important;
+	color:#f8f8f8;
+}
+.replybubble{
+	background: #28a54c;
+    color: white;
+    width: 50%;
+    position: relative;
+    left: 68%;
+}
+.paraposition{
+	color: red;
+    font-weight: bold;
+    position: relative;
+    left: 5%;
+	margin:0;
+}
+.paraposition2{
+	color: red;
+    font-weight: bold;
+    position: relative;
+	margin:0;
+}
+.labelheight1{
+    position: relative;
+    right: 6%;
+	background:white;
+}
+.abouttext{
+	margin-top: -5%;
+    position: relative;
+    left: 3%;
+}
+.aboutprofiletext{
+	margin-top: -5%;
+    position: relative;
+    left: 32%;
+}
+.interesticon{
+	  background: #e62213;
+    color: white;
+    width: 50px;
+    position: relative;
+    right: 130%;
+    top: 6%;
+    margin-top: 300%;
+}
+.borderitem{
+	border:1px solid #aaaaaa;
+}
+.profilerequest{
+	    padding-top: 5%;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    left: 5%;
+}
+.accept{
+	color: white !important;
+    position: relative;
+    right: 8%;
+    font-size: 9px !important;
+    font-weight: bold;
+}
+.reject{
+    position: relative;
+    left: 10%;
+    font-weight: bold;
+    font-size: 9px !important;
+    color: #111 !important;
+}
+.about{
+height: 70px;
+ width: 80%;
+ position: relative;
+ left: 5%;
+ padding-top: 2%;}
+ .genderlabel{
+	 border: 1px solid #b2b2b2;
+    height: 50px;
+ }
+ .button:last-child{margin-right:0}
+.logo{
+	width: 20%;
+    height: 40px;
+	position: relative;
+    left: 39%;
+}
+.boldtext{
+	text-align:center;
+	color:#ef473a;
+	font-size:23px !important;
+}
+.boldtext2{
+	text-align:center;
+	color:rgba(228, 18, 26, 0.9);
+	font-size:15px !important;
+}
+.logotext{
+	text-align: center;
+    color: #e42112;
+    padding-bottom: 2%;
+}
+.wrap1 { margin: 8px; height: 80%; }
+.bubbledLeft {
+   height: auto;
+   
+    
+    clear: both;
+   
+}
+.colposition{
+	position: relative;
+    text-transform: capitalize;
+}
+.messagetime{
+ font-size: 10px;
+    color: #111;
+    position: relative;
+    left: 75%;
+}
+.messagetime1{
+ font-size: 10px;
+ float:right;
+}
+.messagetime2{
+ font-size: 10px;
+    position: relative;
+	left:70%;
+	color:#111;
+}
+.centerbutton{
+	width: 80% !important;
+    position: relative !important;
+    left: 10% !important;
+}
+.headingtext{
+	color: red;
+    font-size: 25px !important;
+    font-weight: bold;
+}
+input[name="message"]::placeholder {
+  position:relative;
+  left:5%;
+}
+.messagebox{
+	border-radius: 30px;
+    height: 40px;
+    width: 290px;
+    margin-top: -50%;
+    position: relative;
+    right: 15%;
+}
+.bottomtext{
+	position: relative;
+    left: 40%;
+}
+.bubble{
+   
+  border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+}
+
+.bubble::before {
+   display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+        -moz-transform:    rotate( 29deg ) skew( -35deg );
+        -ms-transform:     rotate( 29deg ) skew( -35deg );
+        -o-transform:      rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+}
+
+.me {
+    float: left;   
+    margin: 5px 45px 5px 20px;         
+}
+
+.me::before {
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;           
+}
+.interestbutton{
+	width: 80% !important;
+    position: relative;
+    left: 10%;"
+}
+
+.you {
+    float: right;    
+    margin: 5px 20px 5px 45px;         
+}
+
+.you::before {
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;    
+}
+.imglogo{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+	height:150px;
+	padding:4%;
+	
+}
+.imglogo4{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+	width:70%;
+	
+}
+.center{
+	text-align:center;
+}
+.centeralign{
+	text-align :center !important;
+}
+.imglogo1{
+	
+    width: 30%;
+    padding-top:10%;
+}
+.imglogo5{
+	
+    width: 70%;
+    padding-top:20%;
+}
+.bottomtagline2{
+	padding-top: 8%;
+    color: #111;
+    /* position: relative; */
+    /* left: 7%; */
+    text-align: center;
+}
+.roundimage{
+	width: 100%;
+    border-radius: 50%;
+}
+.roundimage5{
+   max-width: 80px !important;
+    max-height: 60px !important;
+    margin-top: -3%;
+    left: 5px !important;
+   
+}
+.roundimage6{
+      margin-top: -3%;
+    width: 150px;
+    position: relative;
+    left: 30%;
+   
+}
+.textcolour{
+	color: #ef473a !important;
+}
+.headericon{
+	font-size: 20px;
+    padding-top: 50%;
+}
+.headericon1{
+	font-size: 20px;
+    padding-top: 2%;
+	position: relative;
+    left: 2%;
+}
+.roundimage1{
+	width: 80%;
+    border-radius: 50%;
+	margin-top: -1.5%;
+    position: relative;
+    left: 10%;
+}
+.squareimage{
+	width: 80%;
+	margin-top: -1.5%;
+    position: relative;
+    left: 10%;
+	height:267px;
+}
+.roundimage2{
+	width: 40%;
+    border-radius: 50%;
+    position: relative;
+    left: 30%;
+    padding-top: 4%;
+}
+.roundimage4{
+    border-radius: 50%;
+    padding-top: 4%;
+}
+.calcenter{
+	position: relative;
+    left: 20%;
+}
+.wrap2{
+	position: absolute !important;
+    top: 34.7% !important;
+    width:100%;
+    background: rgba(0, 0, 0, 0.34)!important;
+    color: #f8f8f8;
+}
+.backgroundimage{
+	background: url('../img/splashnew.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+}
+
+.back1{background: url('../img/backgroundimage.png') repeat;min-height:2248px;}
+.cardposition{
+	position: relative;
+    left: 3%;
+}
+.cardposition2{
+	    position: relative;
+    left: 7%;
+}
+.cardposition3{
+	position: relative;
+    left: 7%;
+}
+.centerbutton{
+	width: 80%;
+    position: relative;
+    left: 10%;
+}
+.topposition{
+	position: relative;
+    left: 60%;
+    bottom: 20px;
+}
+.memberalignment{
+  position: relative;
+    right: 6%;
+	text-transform:capitalize;
+}
+.hinditext{
+	color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.bottomtagline{
+    text-align: center;
+    color: #111;
+	margin-top:-9%;
+}
+.bottomtagline3{
+    color: #fafafa;
+    padding-top: 20%;
+    position: relative;
+    left: 10%;
+}
+.newuser{
+	text-align: center;
+    color: #e42112;
+    font-weight: bold;
+	font-size:17px;
+}
+.forgotpassword{
+	text-align: center;
+    color: rgb(239, 58, 232);
+    font-weight: bold;
+	font-size:17px;
+}
+.toppadding{
+	padding-top:1%;
+}
+.icontextcolor{
+	font-weight: bold;
+    color: #444;
+}
+.textalignment{
+	position: relative;
+}
+.textalignment2{
+	position: relative;
+	left:7%;
+}
+.messagebutton{
+  position: relative;
+    margin-top: -10%;
+    right: 70%;
+}
+.contentmargin{
+	margin-bottom:10%;
+}
+.splasheading{
+	 color: white;
+    position: relative;
+    padding-top: 10%;
+	left:20%;
+}
+.splashtext{
+	color: white;
+    position: relative;
+	left:30%;
+}
+@font-face {
+  font-family: "precious";
+  src: url("../fonts/ConvincingPirate.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; 
+}
+.logotext1{
+	padding-top: 10%;
+    position: relative;
+    font-size: 45px;
+    color: #444;
+    font-family: precious;
+    left: 30%;
+}
+.logotext2{
+	   padding-top: 10%;
+    font-size: 45px;
+    color: #11c1f3;
+    font-family: precious;
+    position: relative;
+    left: 55%;
+}
+.blockbutton{
+	width: 94% !important;
+    position: relative;
+    left: 3%;
+}
+.buttoncolor{
+	background: #ef473a !important
+}
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
+  .selectinput{
+	  background: #ddd;
+  }
+   .selectinput1{
+	  background: #ddd;
+	  height:35px;
+  }
+.toptitle{
+font-size:13px !important;
+ }

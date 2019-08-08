@@ -1,0 +1,67 @@
+/* Empty. Add your own CSS if you like */
+.aligncenter{
+	text-align:center;
+}
+.iconsize{
+	font-size:20px;
+	padding-top:50%;
+}
+.iconsize2{
+	font-size:20px;
+	padding-top:2%;
+}
+.spc{
+	margin-bottom:10px;
+}
+.border{
+	border-bottom: 1px solid;
+}
+.topposition{
+    position: relative;
+    top: 30px;
+    left: 60%;
+}
+.backgroundcontent{
+	background:rgba(0, 0, 0, 0.5);
+}
+.white{
+	color:#aaaaaa;
+}
+.imglogo{
+	width: 20%;
+    height: 50px;
+    position: relative;
+    left: 40%;
+}
+.inputborder{
+	border: 2px solid #b2b2b2;
+}
+.centerimg{
+	border-radius: 50%;
+    position: relative;
+    left: 30%;
+    width: 120px;
+    height: 100px;
+    margin-top: 5%;
+}
+.iconsize3{
+	position: relative;
+    left: 80%;
+    top: 11px;
+	font-size:20px;
+	padding-top:2%;
+}
+.toptext{
+	position: relative;
+    right: 10%;
+}
+.middleiconposition{
+	position: relative;
+    left: 40%;
+}
+.centertext{
+	 position: relative;
+    right: 23%;
+    font-size: 18px;
+
+}

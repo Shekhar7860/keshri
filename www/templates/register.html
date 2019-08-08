@@ -1,0 +1,67 @@
+<ion-view class="content-conatiner">
+  <ion-header-bar class="bar-assertive">
+    
+  <i class="icon ion-arrow-left-c headericon" ng-click="loginpage()"></i>
+  <h1 class="title centeralign">Register (रजिस्टर) </h1>
+  </ion-header-bar>
+  <ion-content>
+  <div class="list padding">
+ 
+	
+
+		
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Enter name (नाम दर्ज)" ng-model="credentials.name" name="name" required>
+   
+          
+        </label>
+		
+	<label class="item item-input spc borderitem">
+		 <form class="form-horizontal" role="form" method="post" name="registration" novalidate>
+		 <span class="help-block" 
+                  ng-show="((registration.phone.$error.minlength ||
+                           registration.phone.$error.maxlength) && 
+                           registration.phone.$dirty) ">
+                           phone number should be 10 digits
+            </span>
+    <input type="number"  class="form-control" 
+                   ng-minlength="10" 
+                   ng-maxlength="10" name="phone"  placeholder="Enter Mobile Number" ng-required="true" ng-model="credentials.number">
+                    
+            </form>
+   
+          
+        </label>
+        
+		
+		<label class="item item-input spc borderitem">
+		
+        <input type="password" placeholder="Password (पासवर्ड)" ng-model="credentials.password">
+   
+          
+        </label>
+
+		<ion-google-place placeholder="Your location (आपकी स्थिति)" ng-model="credentials.location" required name="address" location-changed="locationChanged"></ion-google-place>
+		 
+	<div style="padding-top:10%">
+	<input type="checkbox"  id="myCheck" style="position: relative;
+    left: 7%; margin-left: 8%;"><span style="position: relative;
+    left: 10%;">Are you From Keshri Samaj?  </span><span style="position: relative;
+    left: 22%;"><br>(क्या आप केशरी समाज से हैं?) </span>
+	</div>
+	<p style="text-align:center;color:#444;padding-top:5%;margin-top:0;">By Registering myself I agree <br> <span><a href="#/privacy" style="color:#111;text-decoration:underline;"> to terms and conditions</a> </span><br>
+(अपने आप पंजीकरण करके <br> मैं नियमों और शर्तों से सहमत हूं)</p>
+	<div style="padding-top:15%">
+        <div class="clear-border"><label class="item">
+          <button class="button button-block button-assertive" ng-click="register(credentials)">Register (रजिस्टर)</button>
+		   </label>
+		 <p class="text-center"> Already register 
+(पहले से रजिस्टर करें ) <br><a href="#/login"> Login here! (यहां लॉगिन करें)</a></p>
+	
+		</div>
+	</div>
+		</div>
+  
+  </ion-content>
+</ion-view>

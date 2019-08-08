@@ -1,0 +1,33 @@
+<ion-view class="content-conatiner">
+ <ion-header-bar class="bar-assertive">
+<div class="buttons">
+<i class="icon ion-arrow-left-c headericon " ng-click="home()"></i>
+</div>
+<h1 class="title centeralign toptitle"> Search Matrimonials (खोज वैवाहिक जीवन)</h1>
+</ion-header-bar>
+  <ion-content>
+  <div class="list padding">
+  <div class="row">
+<div class="col col-30"><span class="textcolour"> Age From </span></div>
+<div class="col col-30"><select class="selectinput1" ng-model="selectedage1" ng-options="limit.value as limit.text for limit in age" ng-init="selectedage1='21'"></select></div>
+<div class="col col-10"><span class="textcolour calcenter"> to </span></div>
+<div class="col col-30"><select class="selectinput1" ng-model="selectedage" ng-options="limit.value as limit.text for limit in age1" ng-init="selectedage='24'"></select></div>
+</div>
+ <div class="row">
+<div class="col col-30"><span class="textcolour"> Height From </span></div>
+<div class="col col-30"> <select class="selectinput1" ng-model="selectedheight1" ng-options="limit.value as limit.text for limit in height" ng-init="selectedheight1='5.0'"></select></div>
+<div class="col col-10"><span class="textcolour calcenter"> to  </span></div>
+<div class="col col-30"><select  class="selectinput1" ng-model="selectedheight" ng-options="limit.value as limit.text for limit in height1" ng-init="selectedheight='6.0'"></select></div>
+</div>
+<div class="spc">
+<select class="selectinput1" ng-model="myeducation" ng-options="limit.id as limit.class for limit in education" ng-init="myeducation='Any'"></select>
+</div>
+  <div class="spc">
+		 <select class="selectinput1" ng-model="selectedLimit" ng-options="limit.value as limit.text for limit in limits" ng-init="selectedLimit='Male'"></select></div>
+<button class="button button-block  blockbutton button-calm" ng-click="findvalue( selectedage1, selectedage,selectedheight1, selectedheight, myeducation, selectedLimit )" style="margin-top:10%;">Search(
+खोज)</button> 
+<h4 class="centeralign"> Or (या) </h4>
+<button class="button button-block  blockbutton button-energized" ng-click="find()">Find In State (राज्य में खोजें)</button> 
+</div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,62 @@
+   
+ <ion-header-bar align-title="center" class="bar-balanced">
+ <i class="icon ion-arrow-left-c" style="font-size: 25px;margin-left:8px; margin-top:5px;" ng-click="back()"></i>
+ <h1 class="title">HappyLoans<br>
+Helpful Little Loans</h1>
+ <div class="buttons">
+      <img src="img/logo.png"/>
+  </div>
+</ion-header-bar>
+
+<ion-view view-title="FAQ " name="faq-view" class="content-conatiner">
+  <ion-content class="padding">
+<form ng-submit="doApply()">
+      <div class="card">
+	  <div class="list">
+     	<div class="sect">
+		 <div  ng-click="signup(user)" class="item item-button-right">
+			Signing up with HappyLoans
+			
+			<button  ng-click="signup(user)" class="button button-positive rt-button">
+			  <i class="icon ion-chevron-right"></i>
+			</button>
+		  </div>
+		  
+		  <div class="item item-button-right">
+			HappyLoans registration process
+			<button class="button button-positive rt-button">
+			  <i class="icon ion-chevron-right"></i>
+			</button>
+		  </div>
+		  <div class="item item-button-right">
+			Loan
+			<button class="button button-positive rt-button">
+			  <i class="icon ion-chevron-right"></i>
+			</button>
+		  </div>
+		 
+		 <div class="item item-button-right">
+			Loan repayment
+			<button class="button button-positive rt-button">
+			  <i class="icon ion-chevron-right"></i>
+			</button>
+		  </div>
+		  <div class="item item-button-right">
+			General questions
+			<button class="button button-positive rt-button">
+			  <i class="icon ion-chevron-right"></i>
+			</button>
+		  </div>
+		
+		
+		</div>
+			</div>
+			</div>
+			<button ng-click="faq (data)" class="button button-block button button-balanced">Send E-mail</button>
+			<button ng-click="faq (data)" class="button button-block button button-dark">Call to Customer Support</button>
+			
+		</form>
+  
+
+  </ion-content>
+</ion-view>

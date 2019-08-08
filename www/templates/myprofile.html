@@ -1,0 +1,96 @@
+
+<ion-view class="body-bg">
+  <ion-header-bar class="bar-transparent">
+<div class="buttons">
+<i class="icon ion-arrow-left-c headericon" ng-click="back()"></i>
+<h1 class="title text-center btn-white aligncenter"> My Profile </h1>
+</div>
+
+</ion-header-bar>
+
+  <ion-content >
+   <div class="list">
+    
+	
+	
+	  <div class="list margin-bot-zero">
+	       <div class="profile-box text-center">
+		       <div class="profile-pic">
+			     <img src="{{photo}}" />
+				<!--a href=""> <i class="ion-ios-camera xxxlarge btn-white"></i></a-->
+			   </div>
+			   <!-- <h4>{{firstname}}</h4>
+				<span class="btn-white">Student</span> -->
+		   </div>
+	 </div>
+	 
+	 </div>
+
+	 
+ 
+<ion-tabs class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+
+        <ion-tab title="Basic Info">
+            <ion-nav-view name="tab-1">
+              <ion-content padding="true" has-header="false" class="set-div" style="min-height: 2202px;">
+                 
+                  <div class="row title-border padding" >
+					  <div class="col col-33"><h4 class="txt-orange">Name</h4></div>
+					  <div class="col col-10"><h4 class="txt-orange">:</h4></div>
+					  <div class="col col-56"><h4 class="txt-white">{{firstname}}{{lastname}}</h4></div>
+					  
+				</div>
+				<div class="row title-border padding">
+					  <div class="col col-33"><h4 class="txt-orange">DOB</h4></div>
+					  <div class="col col-10"><h4 class="txt-orange">:</h4></div>
+					  <div class="col col-56"><h4 class="txt-white">fdfd</h4></div>
+					  
+				</div>
+				<div class="row title-border padding">
+					  <div class="col col-33"><h4 class="txt-orange">Class</h4></div>
+					  <div class="col col-10"><h4 class="txt-orange">:</h4></div>
+					  <div class="col col-56 text-left"><h4 class="txt-white">{{classname}}</h4></div>
+					  
+				</div>
+				<div class="row title-border padding">
+					  <div class="col col-33"><h4 class="txt-orange">Email</h4></div>
+					  <div class="col col-10"><h4 class="txt-orange">:</h4></div>
+					  <div class="col col-56 text-left"><h4 class="txt-white">{{email}}</h4></div>
+					  
+				</div>
+				<div class="row title-border padding">
+					  <div class="col col-33"><h4 class="txt-orange">School Name</h4></div>
+					  <div class="col col-10"><h4 class="txt-orange">:</h4></div>
+					  <div class="col col-56 text-left"><h4 class="txt-white">XYZ </h4></div>
+					  
+				</div>
+				<div class="row title-border padding">
+					  <div class="col col-33"><h4 class="txt-orange">Contact No</h4></div>
+					  <div class="col col-10"><h4 class="txt-orange">:</h4></div>
+					  <div class="col col-56 text-left"><h4 class="txt-white">XYZ </h4></div>
+					  
+				</div>
+                 <div class="row title-border padding">
+					  <div class="col col-33"><h4 class="txt-orange">Emergency Contact No</h4></div>
+					  <div class="col col-10"><h4 class="txt-orange">:</h4></div>
+					  <div class="col col-56 text-left"><h4 class="txt-white">XYZ </h4></div>
+					  
+				</div>
+				</ion-content>
+            </ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Complete Info">
+            <ion-nav-view name="tab-2">
+              <ion-content padding="true" has-header="false">
+                  <h5 class="text-center">Coming Soon</h5>
+              </ion-content>
+            </ion-nav-view>
+        </ion-tab>
+
+       
+
+    </ion-tabs>
+ 
+</ion-content>
+</ion-view>

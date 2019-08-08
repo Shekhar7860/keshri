@@ -1,0 +1,82 @@
+<ion--view class="content-conatiner">
+  <ion-header-bar class="bar-assertive">
+  <i class="icon ion-arrow-left-c headericon" ng-click="home()"></i>
+  <h1 class="title centeralign toptitle"> Private Account (निजी खाते) </h1>
+   </ion-header-bar>
+  <ion-content>
+ <!-- <div class="row">
+	<div class="col"><img src="img/blankperson.jpg" style="width:100%;"></div>
+  </div> -->
+ 
+		  
+    <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+    <img ng-show="imgURI === undefined" ng-src="{{image}}" class="roundimage2">
+				
+    <button class="button button-full button-calm centerbutton" ng-click="takePicture()">Upload Photo (फोटो अपलोड करें)</button>
+
+   <div class="list padding">
+        <label class="item item-input spc borderitem">
+		
+        <input type="text" placeholder="Business Name (नाम)" ng-model="user.name">
+  
+          
+        </label>
+        <label class="item item-input spc borderitem">
+         
+		 <input type="text" placeholder="Business Location (स्थान)" ng-model="user.location">
+          
+        </label>
+		
+		<label class="item item-input spc borderitem">
+		 
+		   <input type="text" id="myText"  name="phone"  placeholder="contact number (संपर्क संख्या)" ng-required="true" ng-model="user.mobile">
+             </label>
+		<label class="item item-input spc borderitem">
+         
+		 <input type="text" placeholder="Enter Email (ईमेल दर्ज करें)"  ng-model="user.email">
+          
+        </label>
+		<div class="spc">
+		<div class="row genderlabel">
+      <div class="col col-40">Gender <br> (लिंग): </div>
+		<div class="col col-30">
+		<div class="radio">
+        <label>
+            <input ng-model="user.gender" type="radio" name="rdoResult" ng-value="'Male'">
+              Male <br> (नर)
+        </label>
+    </div>
+	</div>
+	<div class="col col-30">
+    <div class="radio">
+        <label>
+            <input ng-model="user.gender" type="radio" name="rdoResult" ng-value="'Female'">
+             Female (महिला)
+        </label>
+    </div>
+	</div>
+   </div>
+	</div>
+	   <label class="item item-input spc borderitem">
+         
+		 <input type="text" placeholder="Business/ Company name (कंपनी का नाम)"  ng-model="user.company">
+          
+        </label>
+		<label class="item item-input spc borderitem">
+         
+		 <input type="text" placeholder="Your Designation (आपके पद)"  ng-model="user.designation">
+          
+        </label>
+		<label class="item item-input spc borderitem" style="height:70px;">
+         
+		 <input type="text" placeholder="About You (आपके बारे में)"  ng-model="user.about">
+          
+        </label>
+        <div class="clear-border toppadding">
+
+          <button class="button button-block button-assertive" ng-click="update(user)">Update (अद्यतन)</button>
+		</div>
+      </div>
+    
+  </ion-content>
+</ion-modal-view>

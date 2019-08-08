@@ -1,0 +1,37 @@
+<ion-view style="background:#e5e5e5;">
+<ion-header-bar class="bar-assertive">
+<div class="buttons">
+<i class="icon ion-arrow-left-c headericon" ng-click="home()"></i>
+</div>
+<h1 class="title centeralign toptitle"> My Matrimonial Profiles (मेरी वैवाहिक प्रोफाइल)</h1>
+</ion-header-bar>
+<ion-content>
+<h3 class="centeralign" ng-click="createnewprofile()"> {{creatematrimonial}} </h3>
+<div class="list card card-section" ng-repeat="profile in profiles" >
+
+  <div class="item item-avatar list-btn" >
+ 
+	 <img ng-show="profile.photo !== undefined" ng-src="{{profile.photo}}">
+    <img ng-show="profile.photo == undefined" src="http://placehold.it/300x300" style="width: 100%;
+    margin-top: 5%;">
+  
+    <h2 class="assertive">{{profile.name}}</h1>
+    <p style="text-transform:capitalize;">{{profile.gender}} </p>
+    <p style="text-transform:capitalize;">{{profile.location}} </p>
+    <p style="text-transform:capitalize;"> {{profile.education}} </p>
+	 <div class="row view-profilebutton"><button class="item colorprofilebutton" ng-click="profiledetail(profile)"> View Profile </button></div>
+	 <div style="margin-top: -20%;">
+	<div class="row">
+	    <div class="col">
+	      <button class="item colorpdfbutton" ng-click="link(profile)"> Download matrimonial </button>
+		</div>
+		<div class="col">
+	      <button class="item colormatchbutton"  ng-click="suitablematch(profile)"> Suitable Match </button>
+		  </div>
+  </div>
+  </div>
+  </div>
+
+
+</ion-content>
+</ion-view>

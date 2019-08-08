@@ -1,0 +1,24 @@
+<ion-view>
+  <ion-header-bar class="bar-assertive">
+ <div class="buttons">
+<i class="icon ion-arrow-left-c headericon" ng-click="lastpage()"></i>
+</div>
+<h1 class="title centeralign toptitle"> Update Photos (तस्वीरें अपडेट करेंं) </h1>
+</ion-header-bar>
+
+  <ion-content>
+  <div class="list padding">
+  <img ng-show="imgpath2 !== undefined" ng-src="{{imgpath2}}" style="width:100%; height: auto;">
+  <img ng-show="imgpath2 === undefined" ng-src="{{photo1}}" style="width:100%; height: auto;">
+				
+   <button class="button button-full button-assertive" ng-click="capturephoto()">Upload Photo1 (फोटो अपलोड करें)</button>
+   <img ng-show="imgpath3 !== undefined" ng-src="{{imgpath3}}" style="width:100%; height: auto;">
+    <img ng-show="imgpath3 === undefined" ng-src="{{photo2}}" style="width:100%; height: auto;">
+				
+    <button class="button button-full button-assertive" ng-click="capturephoto1()">Upload Photo2 (फोटो अपलोड करें)</button>
+	 <button class="button button-block button-assertive" ng-click="uploadphotos()" style="margin-top: 10%;">Submit(जमा करें) </button>
+	</div>
+  </ion-content>
+
+  </ion-view>
+  

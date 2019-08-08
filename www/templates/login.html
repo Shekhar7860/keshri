@@ -1,0 +1,74 @@
+<ion-view class="back">
+  
+  <ion-content >
+  
+    <form ng-submit="doLogin()" class="form-horizontal" role="form" method="post" name="registration" novalidate>
+	<img src="img/icon.png" class="imglogo">
+	
+      <div class="list padding">
+	 <span class="help-block" 
+                  ng-show="((registration.phone.$error.minlength ||
+                           registration.phone.$error.maxlength) && 
+                           registration.phone.$dirty) ">
+                           phone number should be 10 digits
+            </span>
+        <label class="item item-input spc" style="background:white;">
+		
+       <i class="icon ion-android-phone-portrait"></i>   
+     <input type="number"  placeholder="Enter registered mobile number (मोबाइल नंबर)" ng-model="loginData.number" class="form-control" 
+                   ng-minlength="10" 
+                   ng-maxlength="10" name="phone"  ng-required="true" >
+        </label>
+        <label class="item item-input spc" style="background:white;">
+          <i class="ion-locked padding-right x-large"></i>  
+		  <input ng-model="loginData.password" type="password" placeholder="Password (पासवर्ड)">
+          
+        </label>
+		 <button class="button button-block button-assertive" ng-click="login(loginData)">LOGIN (
+लॉग इन करें)</button>
+      
+         <div class="row">
+			<div class="col">
+		  <p class="forgotpassword" ng-click="sendemail()">Forgot Password <br> (पासवर्ड भूल गए ?)</p>
+			 </div>
+			 <div class="col">
+		<p class="newuser" ng-click="signup()"> New User? SignUp <br>(नया उपयोगकर्ता! साइन अप करें) </p>
+		</div>
+	    </div>
+		<p  class="paralist" ng-click="resendotp()"> RESEND/VERIFY OTP <br> (ओटीपी पुनः भेजें / सत्यापित करें)</p>
+		</div>
+		<div class="bottomtagline"> Pramod Kumar Keshri,<br>
+                                 Barhi, Hazaribagh, Jharkhand<br>
+                                  Whatsapp: 9356704158 <br>
+                                   Email: keshripramod@gmail.com <br>
+
+                                  Director, Softoasis Technologies Pvt Ltd, <br>
+                                     Chandigarh( India ) </div>
+		
+	<!--	<p class="para"> LISTING <span style="color:red"> APP </span> </p> -->
+      </div>
+    </form>
+	
+  </ion-content>
+  <div class ="tabs tabs-icon-top">
+	
+   <a class = "tab-item" ng-href="#/register">
+   <i class="icon ion-person-add"></i>
+     <div class="icontextcolor"> Sign Up</div>
+   </a>
+	
+   <a class = "tab-item" ng-href="#/about">
+      <i class="icon ion-pricetag"></i>
+	<div class="icontextcolor"> About </div>
+   </a>
+    <a class = "tab-item" ng-href="#/help">
+      <i class="icon ion-help"></i>
+    <div class="icontextcolor"> Help </div>
+   </a>
+   <a class = "tab-item" ng-href="#/privacy">
+      <i class="icon ion-outlet"></i>
+    <div class="icontextcolor">Privacy </div>
+   </a>
+	
+ </div>
+</ion-view>

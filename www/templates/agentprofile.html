@@ -1,0 +1,57 @@
+<ion-view>
+<ion-header-bar class="bar-assertive">
+<div class="buttons">
+<i class="icon ion-arrow-left-c headericon" ng-click="home()"></i>
+</div>
+<h1 class="title centeralign"> Admin (व्यवस्थापक)</h1>
+</ion-header-bar>
+<ion-content>
+ <form ng-submit="doLogin()" class="form-horizontal" role="form" method="post" name="registration" novalidate>
+ <div class="padding">
+      <div class="card">
+	  <div class="list">
+     	<div class="sect">
+		 <div  ng-click="register()" class="item item-button-right">
+				Create Account (खाता बनाएं)
+			
+			<button  class="button button-positive rt-button">
+			  <i class="icon ion-chevron-right"></i>
+			</button>
+		  </div>
+		  
+	  <div class="item item-button-right" ng-click="creatematrimonial()">
+				Create Matrimony (विवाह बनाओ)
+			<button class="button button-positive rt-button">
+			  <i class="icon ion-chevron-right"></i>
+			</button>
+		  </div> 
+		  <div class="item item-button-right" ng-click="changepassword()">
+				Confirm Account (खाते की पुष्टि करें)
+			<button class="button button-positive rt-button">
+			  <i class="icon ion-chevron-right"></i>
+			</button>
+		  </div> 
+		
+		
+		
+		</div>
+			</div>
+			</div>
+			
+		<!--	<div class="spc">
+      	<select ng-model="user.profilefor" name="user.height">
+			  <option value="" disabled selected hidden>Profile for</option> 
+			   <option>Self</option>
+			  <option>Friend</option>
+			  <option>Brother</option>
+			  <option>Sister</option>
+			   <option>Daughter</option>
+			    <option>Son</option>
+			  <option>Relative</option>
+			  
+			 </select>
+		</div> -->
+		
+  
+</ion-content>
+</ion-view>

@@ -1,0 +1,79 @@
+<ion-view class="back">
+<ion-content>
+<h1 style="text-align:center; color:red; font-size:22px;" ng-click="getImageSaveContact()"><i class="icon ion-arrow-left-c arrowleft" ng-click="home()" style="color:white;"></i> MATRIMONIAL PROFILE </h1>
+<center><img ng-src="{{collection.selectedImage}}" style="width:30%;"></center>
+<label class="item toplabel">
+	<p style="margin-top: -10%;
+    font-size: 8px;
+    font-weight: bold;"> UPLOAD IMAGE	</p>
+  </label>
+<div class="padding">
+<div class="row">
+  <div class="col">	
+    <label class="item item-input middlelabel">
+    <input class="middleinput" type="text" placeholder="Person">
+     </label>
+  </div>
+  <div class="col">
+	<label class="item item-input middlelabel" style="position: relative;
+    right: 10%;background:red">
+	  <input class="middleinput" type="text" placeholder="Looking For">
+    </label> 
+  </div>
+</div>
+
+
+<div class="row">
+   <div class="col col-10"></div>
+   <div class="col col-40">	
+      <span>AGE FROM</span>
+	<select style="width:100%;" class="selectposition">
+        <option selected>Default</option>
+        <option >Green</option>
+        <option>Red</option>
+    </select>
+   </div>
+  <div class="col col-10"></div>
+  <div class="col col-40">
+	 <span>TO DATE</span>
+	 <select style="width:100%;" class="selectposition">
+        <option selected>Default</option>
+        <option >Green</option>
+        <option>Red</option>
+    </select>
+    </div>
+</div>
+
+<div class="location">
+ <span>LOCATION</span>
+	 <select style="width: 120%;
+    position: relative;
+    right: 20%;">
+        <option selected>Default</option>
+        <option >Green</option>
+        <option>Red</option>
+    </select>
+</div>
+
+
+<div class="row">
+   <div class="col col-10"></div>
+   <div class="col col-40">	
+      <span>WORKING</span>
+	<label class="item item-input" style="background:red;">
+	<p> YES </p>
+  </label>
+   </div>
+  <div class="col col-10"></div>
+  <div class="col col-40">
+	 <span></span>
+	<label class="item item-input labelheight">
+	<p> NO </p>
+  </label>
+    </div>
+</div>
+ <center><button class="button button-assertive button-block" ng-click="save()" style="width:80%;"> SAVE </button></center>
+<p class="para1"> LISTING <span style="color:red"> APP </span> </p>
+</div>
+</ion-content>
+</ion-view>

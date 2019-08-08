@@ -1,0 +1,61 @@
+<ion-view class="content-conatiner">
+ <ion-header-bar class="bar-assertive">
+<div class="buttons">
+<i class="icon ion-arrow-left-c headericon " ng-click="filteredpage()"></i>
+</div>
+<h1 class="title centeralign toptitle"> Matrimonials (वैवाहिक) </h1>
+</ion-header-bar>
+  <ion-content>
+  <h3 class="centeralign"> {{member}} </h3>
+<div class="row" ng-hide="searchbox" >
+<div class="col">
+	<label class="item item-input middlelabel">
+	  <input type="text" ng-model="searchText" placeholder="Search by name, location, height, weight, gender" style="position: relative;
+    left: 0%;">
+    </label> 
+  </div>
+</div>
+
+<div class="card"   style="background:rgba(204, 204, 204, 0.43);" ng-repeat="member in memberssearch.data | filter:searchText" ng-click="membersdetail(member)" ng-style="setbackgroundimage(member)">
+	<div class="row">
+		<div class="col col-30" style="font-size:10px; padding:0;">
+	<img ng-show="member.photo !== undefined" ng-src="{{member.photo}}" style="width: 100%;border-radius: 50%;" >
+    <img ng-show="member.photo == undefined" src="http://placehold.it/300x300" style="width: 100%;
+    margin-top: 5%;"><br><span class="textcolour"> Posted by </span> : {{member.posted_by}} <br><span class="textcolour"> Posted </span> : {{member.join_date}} </div>
+		<div class="col col-50"><div style="font-size: 25px;
+    font-weight: bold;"> <span style="text-transform:capitalize;font-size: 20px;
+    text-transform: capitalize;
+    color: red;">{{member.name}} </span> </div> <br><span class="textcolour"> From </span> : {{member.location}}<br> <span class="textcolour"> Height </span> : {{member.height}} <br><span class="textcolour"> Complexion</span>: {{member.complexion}} <br><span class="textcolour"> Gender </span>: {{member.gender}} <br><span class="textcolour"> Age </span> : {{member.dob}} <br><span class="textcolour"> Education </span> : {{member.education}} </div>
+		<div class="col col-20"  style="font-size: 10px;
+    padding-top: 5%;"><button class="button button-small icon ion-heart button-assertive">
+  Send Interest
+</button></div>
+	</div>
+
+</div>
+
+<!--<div class="list card card-section" ng-repeat="member in members" ng-click="membersdetail(member)" ng-style="setbackgroundimage(member)">
+
+  <div class="item item-avatar list-btn" >
+    <img ng-src="{{member.photo}}" id="my-image" class="roundimage5" width="100" height="100">
+	<div class="textalignment2">
+    <h2 class="assertive">{{member.name}}</h1>
+    <p> {{member.location}} </p>
+	</div>
+  </div>
+  </div> -->
+<!--
+<div class="card" style="background:rgba(204, 204, 204, 0.43);" ng-repeat="member in members | filter:searchText" ng-click="individualprofile(member)">
+	<div class="row">
+		<div class="col col-30" style="font-size:10px;">
+	<img ng-show="member.photo !== undefined" ng-src="{{member.photo}}" class="roundimage4" id="my-image"  width="100" height="100"  >
+    <br> Joined {{member.join_date}} <br>  </div>
+		<div class="col col-50" style="padding:0;"><div style="font-size: 25px;
+    font-weight: bold;"> <span style="text-transform:capitalize;font-size: 20px;
+    text-transform: capitalize;
+    color: red;">{{member.name}} </span> </div> <br> From : {{member.location}}</div>
+		<div class="col col-20"  style="font-size: 10px;padding-top:32%;"></div>
+	</div>
+</div> -->
+  </ion-content>
+</ion-view>

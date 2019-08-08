@@ -1,0 +1,700 @@
+<ion-view>
+<ion-header-bar class="bar-assertive">
+<div class="buttons">
+<i class="icon ion-arrow-left-c headericon" ng-click="home()"></i>
+</div>
+<h1 class="title centeralign toptitle"> Create Matrimonial Profile (वैवाहिक प्रोफ़ाइल बनाएं) </h1>
+</ion-header-bar>
+<ion-content>
+<div class="list padding">
+ <img ng-show="imgpath !== undefined" ng-src="{{imgpath}}">
+    <img ng-show="imgpath === undefined" ng-src="img/blankperson.jpg" style="width:100%; height: 120px;">
+				
+    <button class="button button-full button-assertive centerbutton" ng-click="takePicture()">Upload Photo (फोटो अपलोड करें)</button>
+	<!--h3 class="centeralign"> Basic Details </h3-->
+<div class="spc">
+      	<select ng-model="user.profilefor" name="user.height">
+			  <option value="" disabled selected hidden>Profile for (प्रोफ़ाइल के लिए)</option> 
+			   <option>Self</option>
+			   <option>Friend</option>
+			   <option>Brother</option>
+			   <option>Sister</option>
+			   <option>Daughter</option>
+			   <option>Son</option>
+			   <option>Relative</option>
+		</select>
+		</div>
+	
+       
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Enter name (नाम दर्ज)" ng-model="user.name">
+   
+          
+        </label>
+		
+		<div class="spc">
+		<select ng-model="user.education" ng-options="limit.name as limit.name for limit in list" ng-init="user.education='10th'"></select></div>
+      	
+		<div class="spc">
+		<select  ng-model="user.dob" name="user.age" style="margin-top:3%;">
+			  <option value="" disabled selected hidden>Enter Age (आयु दर्ज करें)</option> 
+			  <option value="18">18 Yrs </option>
+			  <option value="19">19 Yrs </option>
+			  <option value="20">20 Yrs </option>
+			  <option value="21">21 Yrs </option>
+			  <option value="22">22 Yrs </option>
+			   <option value="23">23 Yrs </option>
+			   <option value="24">24 Yrs </option>
+			   <option value="25">25 Yrs </option>
+			   <option value="26">26 Yrs </option>
+		       <option value="27">27 Yrs </option>
+			  
+				  <option value="28">28 Yrs </option>
+				  <option value="29">29 Yrs </option>
+				  <option value="30">30 Yrs </option>
+			  <option value="31">31 Yrs </option>
+				  <option value="32">32 Yrs </option>
+			      <option value="33">33 Yrs </option>
+				  <option value="34">34 Yrs </option>
+				  <option value="35">35 Yrs </option>
+				  <option value="36">36 Yrs </option>
+				  <option value="37">37 Yrs </option>
+				  <option value="38">38 Yrs </option>
+				  <option value="39">39 Yrs </option>
+				  <option value="40">40 Yrs </option>
+				
+			   
+		</select>
+		</div>
+<select ng-model="user.height" name="user.height">
+			  <option value="" disabled selected hidden>Enter Height (ऊंचाई दर्ज करें)</option> 
+			  <option value="4.0">4F</option>
+			  <option value="4.1">4Ft 1"</option>
+			  <option value="4.2">4Ft 2"</option>
+			  <option value="4.3">4Ft 3"</option>
+			  <option value="4.4">4Ft 4"</option>
+			  <option value="4.5">4Ft 5"</option>
+			  <option value="4.6">4Ft 6"</option>
+			  <option value="4.7">4Ft 7"</option>
+			  <option value="4.8">4Ft 8"</option>
+			  <option value="4.9" >4Ft 9"</option>
+			   <option value="4.10" >4Ft 10"</option>
+			   <option value="4.11" >4Ft 11"</option>
+			  
+				<option value="5.0">5F</option>
+				<option value="5.1">5Ft 1"</option>
+				<option value="5.2">5Ft 2"</option>
+				<option value="5.3">5Ft 3"</option>
+				<option value="5.4">5Ft 4"</option>
+			    <option value="5.5">5Ft 5"</option>
+				<option value="5.6">5Ft 6"</option>
+				<option value="5.7">5Ft 7"</option>
+				<option value="5.8">5Ft 8"</option>
+				<option value="5.9">5Ft 9"</option>
+				<option value="5.10">5Ft 10"</option>
+				<option value="5.11">5Ft 11"</option>
+				
+				<option value="6.0">6F</option>
+				<option value="6.1">6Ft 1"</option>
+				<option value="6.2" >6Ft 2"</option>
+				<option value="6.3">6Ft 3"</option>
+			    <option value="6.4">6Ft 4"</option>
+				<option value="6.5">6Ft 5"</option>
+				<option value="6.6">6Ft 6"</option>
+				<option value="6.7">6Ft 7"</option>
+				<option value="6.8">6Ft 8"</option>
+				<option value="6.9">6Ft 9"</option>
+				<option value="6.10">6Ft 10"</option>
+				<option value="6.11">6Ft 11"</option>
+				<option value="7">7F</option>
+			   
+		</select>
+		
+
+			<div class="spc">
+	<select  ng-model="user.weight" name="user.weight" style="margin-top:3%;">
+			  <option value="" disabled selected hidden>Enter Weight (वजन दर्ज करें)</option> 
+			  <option value="40">40 Kg</option>
+				<option value="45">45 Kg</option>
+				<option value="48">48 Kg</option>
+				<option value="50" >50 Kg</option>
+			    <option value="52">52 Kg</option>
+				<option value="55">55 Kg</option>
+				<option value="57">57 Kg</option>
+				<option value="60">60 Kg</option>
+				<option value="62">62 Kg</option>
+				<option value="65">65 Kg</option>
+				<option value="68">68 Kg</option>
+				<option value="70">70 Kg</option>
+				<option value="72">72 Kg</option>
+				<option value="75">75 Kg</option>
+				<option value="78">78 Kg</option>
+				<option value="80">80 Kg</option>
+		</select>
+		</div>
+	<div class="spc">
+      	<select  ng-model="user.complexion" name="user.complexion">
+			  <option value="" disabled selected hidden> Skin Type (त्वचा प्रकार)</option> 
+			  <option>Light</option>
+			  <option>Fair</option>
+			  <option>Medium</option>
+			  <option>Black</option>
+			  <option>Rough</option>
+
+		</select>
+		</div>
+	
+<div class="spc"> 		
+<div class="row genderlabel">
+<div class="col col-40">Gender <br> (लिंग): </div>
+		<div class="col col-30">
+		<div class="radio">
+        <label>
+            <input ng-model="user.gender" type="radio" name="rdoResult" ng-value="'Male'">
+              Male <br> (पुरुष)
+        </label>
+    </div>
+	</div>
+	<div class="col col-30">
+    <div class="radio">
+        <label>
+            <input ng-model="user.gender" type="radio" name="rdoResult" ng-value="'Female'">
+             Female (महिला)
+        </label>
+    </div>
+	</div>
+</div>
+</div>
+<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Enter Father's name (पिता का नाम दर्ज करें)" ng-model="user.father_name" name="fathername">
+   
+          
+        </label>
+		<form name="aboutform">
+			<label class="item item-input spc labelborder" style="height: 80px;">
+		
+        <input type="text" placeholder="About Girl/Boy (लड़की / लड़के के बारे में)" ng-maxlength="100" name="about" ng-model="user.about" name="about" style="margin-bottom: 10%;">
+   
+          
+        </label>
+		<span class="error" ng-show="aboutform.about.$error.maxlength">
+       </span>
+	   </form>
+	   <div class="spc">
+          <ion-google-place  placeholder="Your address (आपका पता)"  ng-model="user.location" required name="address" location-changed="locationChanged"></ion-google-place>
+		  </div>
+	 <!--  <h3 class="centeralign"> Additional Details </h3>
+  
+		
+<label class="item item-input spc labelborder">
+		
+        <input type="text" id="datepicker" placeholder="Date of birth" ng-model="user.Date_of_birth" name="Date of birth">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Birth time" ng-model="user.Birth_time" name="Birth time">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Birth place" ng-model="user.Birth_place" name="Birth place">
+   
+          
+        </label>
+		
+		
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Income" ng-model="user.Income" name="Income">
+   
+          
+        </label>
+		
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="hobby" ng-model="user.hobby">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Father's Occupation" ng-model="user.FatherOccupation" name="Brother's Occupation ">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Mother's Occupation" ng-model="user.MotherOccupation" name="Brother's Occupation ">
+   
+          
+        </label>
+
+		
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Brother's Occupation" ng-model="user.BrotherOccupation" name="Brother's Occupation ">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Sister's Occupation" ng-model="user.SisterOccupation " name="Sister's Occupation ">
+   </label>
+   	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Family status" ng-model="user.Familystatus " name="Family status ">
+   </label>
+    	
+   
+   	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Gotra" ng-model="user.Gotra" name="Gotra ">
+   </label>
+   	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Kul Devta  " ng-model="user.KulDevta" name="Kul Devta ">
+   </label>
+    	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Kundle " ng-model="user.Kundle" name="Kundle ">
+   </label>
+    <label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Mobile " ng-model="user.Mobile" name="Mobile ">
+   </label>
+    <label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Email id" ng-model="user.Emailid" name="E Mail ID ">
+   </label>
+		
+		
+		  <h3 class="centeralign"> Preference </h3>
+		  <label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="preference_service" ng-model="user.father_name" name="fathername">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="age_from" ng-model="user.agefrom" name="fathername">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="age_to" ng-model="user.ageto">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="preference_location" ng-model="user.preferencelocation">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="preference_height_from" ng-model="user.preferenceheightfrom">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="preference_height_to" ng-model="user.preferenceheighto">
+   
+          
+        </label> -->
+    <button class="button button-block button-assertive" ng-click="create(user)" style="height: 20px;">Create Matrimonial profile (वैवाहिक प्रोफ़ाइल बनाएं) </button>
+		  
+		    
+		 
+    </div>
+		
+	  
+
+</ion-content>
+</ion-view>
+<!--ion-view>
+<ion-header-bar class="bar-assertive">
+<div class="buttons">
+<i class="icon ion-arrow-left-c headericon" ng-click="home()" style="font-size:20px;"></i>
+</div>
+<h1 class="title centeralign"> Create Matrimonial Profile </h1>
+</ion-header-bar>
+<ion-content>
+<div class="list padding">
+ <img ng-show="imgpath !== undefined" ng-src="{{imgpath}}" style="width:100%; height: 120px;">
+    <img ng-show="imgpath === undefined" ng-src="img/blankperson.jpg" style="width:100%; height: 120px;">
+				
+    <button class="button button-full button-assertive centerbutton" ng-click="takePicture()">Upload Photo</button>
+	h3 class="centeralign"> Basic Details </h3
+<div class="spc">
+      	<select ng-model="user.profilefor" name="user.height">
+			  <option value="" disabled selected hidden>Profile for</option> 
+			   <option>Self</option>
+			   <option>Friend</option>
+			   <option>Brother</option>
+			   <option>Sister</option>
+			   <option>Daughter</option>
+			   <option>Son</option>
+			   <option>Relative</option>
+		</select>
+		</div>
+	
+       
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Enter name" ng-model="user.name">
+   
+          
+        </label>
+		
+		<div class="spc">
+      	<select ng-model="user.education" name="user.education">
+			  <option value="" disabled selected hidden> Qualification</option> 
+			  <option>10TH</option>
+			  <option>12TH</option>
+			  <option>Bachelor of Business Administration(B.B.A)</option>
+						<option>Bachelor of Commerce(B.Com)</option>
+						<option>Bachelor of Computer Applications(B.C.A)</option>
+						<option>Bachelor of Dental Surgery(B.D.S)</option>
+						<option>Bachelor of Design(B.Des/B.D)</option>
+						<option>Bachelor of Education(B.Ed)</option>
+						<option>Bachelor of Engineering(B.E./B.Tech)</option>
+						<option>Bachelor of Fine Arts(BFA/BVA)</option>
+						<option>Bachelor of Fisheries Science(B.F.Sc/B.Sc)</option>
+						<option>Bachelor of Homoeopathic Medicine and Surgery (B.H.M.S)</option>
+						<option>Bachelor of Laws(L.L.B)</option>
+						<option>Bachelor of Library Science(B.Lib/B.Lib.Sc)</option>
+						<option>Bachelor of Mass Communications(B.M.C/B.M.M)</option>
+						<option>Bachelor of Medicine and Bachelor of Surgery(M.B.B.S)</option>
+						<option>Bachelor of Nursing</option>
+						<option>Bachelor of Pharmacy(B.Pharm/B.Pharma)</option>
+						<option>Bachelor of Physical Education(B.P.Ed)</option>
+						<option>Bachelor of Physiotherapy(B.P.T)</option>
+						<option>Bachelor of Science(B.Sc)</option>
+						<option>Bachelor of Social Work(BSW/B.A.)</option>
+						<option>Bachelor of Veterinary Science & Animal Husbandry(B.V.Sc/B.V.Sc)</option>
+						<option>Doctor of Medicine(M.D)</option>
+						<option>Doctor of Medicine in Homoeopathy(M.D)</option>
+						<option>Doctor of Pharmacy(Pharm.D)</option>
+						<option>Doctor of Philosophy(Ph.D)</option>
+						<option>Doctorate of Medicine(D.M)</option>
+						<option>Master of Architecture(M.Arch)</option>
+						<option>Master of Arts(M.A)</option>
+						<option>Master of Business Administration(M.B.A)</option>
+						<option>Master of Chirurgiae(M.Ch)</option>
+						<option>Master of Commerce(M.Com)</option>
+						<option>Master of Computer Applications(M.C.A)</option>
+						<option>Master of Dental Surgery(M.D.S)</option>
+						<option>Master of Design(M.Des/M.Design)</option>
+						<option>Master of Education(M.Ed)</option>
+						<option>Master of Engineering(M.Tech)</option>
+						<option>Master of Fine Arts(MFA)</option>
+						<option>Master of Laws(L.L.M)</option>
+						<option>Master of Library Science(M.Lib.Sc)</option>
+						<option>Master of Mass Communications(M.M.C)</option>
+						<option>Master of Pharmacy(M.Pharm)</option>
+						<option>Master of Philosophy(M.Phil)</option>
+						<option>Master of Physical Education(M.P.Ed)</option>
+						<option>Master of Physiotherapy(M.P.T)</option>
+						<option>Master of Science(M.Sc)</option>
+						<option>Master of Social Work(M.S.W)</option>
+						<option>Master of Surgery(M.S)</option>
+						<option>Master of Veterinary Science(M.V.Sc)</option>
+						<option>Bachelor Degrees</option>
+	</select>
+		</div>
+		<div class="spc">
+		<select ng-model="user.dob" name="user.age" style="margin-top:3%;">
+			  <option value="" disabled selected hidden>Enter Age</option> 
+			  <option value="18">18 Yrs </option>
+			  <option value="19">19 Yrs </option>
+			  <option value="20">20 Yrs </option>
+			  <option value="21">21 Yrs </option>
+			  <option value="22">22 Yrs </option>
+			   <option value="23">23 Yrs </option>
+			   <option value="24">24 Yrs </option>
+			   <option value="25">25 Yrs </option>
+			   <option value="26">26 Yrs </option>
+		       <option value="27">27 Yrs </option>
+			  
+				  <option value="28">28 Yrs </option>
+				  <option value="29">29 Yrs </option>
+				  <option value="30">30 Yrs </option>
+			  <option value="31">31 Yrs </option>
+				  <option value="32">32 Yrs </option>
+			      <option value="33">33 Yrs </option>
+				  <option value="34">34 Yrs </option>
+				  <option value="35">35 Yrs </option>
+				  <option value="36">36 Yrs </option>
+				  <option value="37">37 Yrs </option>
+				  <option value="38">38 Yrs </option>
+				  <option value="39">39 Yrs </option>
+				  <option value="40">40 Yrs </option>
+				
+			   
+		</select>
+		</div>
+<select ng-model="user.height" name="user.height">
+			  <option value="" disabled selected hidden>Enter Height</option> 
+			  <option value="4.0">4F</option>
+			  <option value="4.1">4Ft 1"</option>
+			  <option value="4.2">4Ft 2"</option>
+			  <option value="4.3">4Ft 3"</option>
+			  <option value="4.4">4Ft 4"</option>
+			  <option value="4.5">4Ft 5"</option>
+			  <option value="4.6">4Ft 6"</option>
+			  <option value="4.7">4Ft 7"</option>
+			  <option value="4.8">4Ft 8"</option>
+			  <option value="4.9" >4Ft 9"</option>
+			   <option value="4.10" >4Ft 10"</option>
+			   <option value="4.11" >4Ft 11"</option>
+			  
+				<option value="5.0">5F</option>
+				<option value="5.1">5Ft 1"</option>
+				<option value="5.2">5Ft 2"</option>
+				<option value="5.3">5Ft 3"</option>
+				<option value="5.4">5Ft 4"</option>
+			    <option value="5.5">5Ft 5"</option>
+				<option value="5.6">5Ft 6"</option>
+				<option value="5.7">5Ft 7"</option>
+				<option value="5.8">5Ft 8"</option>
+				<option value="5.9">5Ft 9"</option>
+				<option value="5.10">5Ft 10"</option>
+				<option value="5.11">5Ft 11"</option>
+				
+				<option value="6.0">6F</option>
+				<option value="6.1">6Ft 1"</option>
+				<option value="6.2" >6Ft 2"</option>
+				<option value="6.3">6Ft 3"</option>
+			    <option value="6.4">6Ft 4"</option>
+				<option value="6.5">6Ft 5"</option>
+				<option value="6.6">6Ft 6"</option>
+				<option value="6.7">6Ft 7"</option>
+				<option value="6.8">6Ft 8"</option>
+				<option value="6.9">6Ft 9"</option>
+				<option value="6.10">6Ft 10"</option>
+				<option value="6.11">6Ft 11"</option>
+				<option value="7">7F</option>
+			   
+		</select>
+		
+
+			<div class="spc">
+	<select ng-model="user.weight" name="user.weight" style="margin-top:3%;">
+			  <option value="" disabled selected hidden>Enter Weight</option> 
+			  <option value="40">40 Kg</option>
+				<option value="45">45 Kg</option>
+				<option value="48">48 Kg</option>
+				<option value="50" >50 Kg</option>
+			    <option value="52">52 Kg</option>
+				<option value="55">55 Kg</option>
+				<option value="57">57 Kg</option>
+				<option value="60">60 Kg</option>
+				<option value="62">62 Kg</option>
+				<option value="65">65 Kg</option>
+				<option value="68">68 Kg</option>
+				<option value="70">70 Kg</option>
+				<option value="72">72 Kg</option>
+				<option value="75">75 Kg</option>
+				<option value="78">78 Kg</option>
+				<option value="80">80 Kg</option>
+		</select>
+		</div>
+	<div class="spc">
+      	<select ng-model="user.complexion" name="user.complexion">
+			  <option value="" disabled selected hidden> Skin Type</option> 
+			  <option>Light</option>
+			  <option>Fair</option>
+			  <option>Medium</option>
+			  <option>Black</option>
+			  <option>Rough</option>
+
+		</select>
+		</div>
+	
+<div class="spc"> 		
+<div class="row genderlabel">
+<div class="col col-40">Gender: </div>
+		<div class="col col-30">
+		<div class="radio">
+        <label>
+            <input ng-model="user.gender" type="radio" name="rdoResult" ng-value="'Male'">
+              Male
+        </label>
+    </div>
+	</div>
+	<div class="col col-30">
+    <div class="radio">
+        <label>
+            <input ng-model="user.gender" type="radio" name="rdoResult" ng-value="'Female'">
+             Female
+        </label>
+    </div>
+	</div>
+</div>
+</div>
+<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Enter Father's name" ng-model="user.father_name" name="fathername">
+   
+          
+        </label>
+		<form name="aboutform">
+			<label class="item item-input spc labelborder" style="height: 80px;">
+		
+        <input type="text" placeholder="About Girl/Boy" ng-maxlength="100" name="about" ng-model="user.about" name="about" style="margin-bottom: 10%;">
+   
+          
+        </label>
+		<span class="error" ng-show="aboutform.about.$error.maxlength">
+       </span>
+	   </form>
+	   <div class="spc">
+          <ion-google-place placeholder="Your address" ng-model="user.address" required name="address" location-changed="locationChanged"></ion-google-place>
+		  </div>
+	 <!--  <h3 class="centeralign"> Additional Details </h3>
+  
+		
+<label class="item item-input spc labelborder">
+		
+        <input type="text" id="datepicker" placeholder="Date of birth" ng-model="user.Date_of_birth" name="Date of birth">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Birth time" ng-model="user.Birth_time" name="Birth time">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Birth place" ng-model="user.Birth_place" name="Birth place">
+   
+          
+        </label>
+		
+		
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Income" ng-model="user.Income" name="Income">
+   
+          
+        </label>
+		
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="hobby" ng-model="user.hobby">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Father's Occupation" ng-model="user.FatherOccupation" name="Brother's Occupation ">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Mother's Occupation" ng-model="user.MotherOccupation" name="Brother's Occupation ">
+   
+          
+        </label>
+
+		
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Brother's Occupation" ng-model="user.BrotherOccupation" name="Brother's Occupation ">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Sister's Occupation" ng-model="user.SisterOccupation " name="Sister's Occupation ">
+   </label>
+   	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Family status" ng-model="user.Familystatus " name="Family status ">
+   </label>
+    	
+   
+   	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Gotra" ng-model="user.Gotra" name="Gotra ">
+   </label>
+   	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Kul Devta  " ng-model="user.KulDevta" name="Kul Devta ">
+   </label>
+    	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Kundle " ng-model="user.Kundle" name="Kundle ">
+   </label>
+    <label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Mobile " ng-model="user.Mobile" name="Mobile ">
+   </label>
+    <label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Email id" ng-model="user.Emailid" name="E Mail ID ">
+   </label>
+		
+		
+		  <h3 class="centeralign"> Preference </h3>
+		  <label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="preference_service" ng-model="user.father_name" name="fathername">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="age_from" ng-model="user.agefrom" name="fathername">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="age_to" ng-model="user.ageto">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="preference_location" ng-model="user.preferencelocation">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="preference_height_from" ng-model="user.preferenceheightfrom">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="preference_height_to" ng-model="user.preferenceheighto">
+   
+          
+        </label> >
+          <button class="button button-block button-assertive" ng-click="create(user)">Create Matrimonial profile</button>
+		  
+		    
+		 
+   
+	<div ng-repeat="image in images">
+	{{image}}
+	</div>
+	<button class="button button-block button-balanced" ng-click="addphotos()"> Add Photos </button>
+	   </div>
+
+</ion-content>
+</ion-view -->

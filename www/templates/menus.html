@@ -1,0 +1,348 @@
+<!--
+<ion-view>
+<ion-content>
+<div ng-show="paymentbutton" class="paymenttag1">
+<center style="margin-bottom: -15%;
+    padding-top: 5%;">Please pay your matrimonial fee {{payment}}<center>
+<div class="pm-button1">
+       <a ng-click="newlink3()">
+                <img src="https://www.payumoney.com//media/images/payby_payumoney/buttons/211.png" />
+            </a>    		
+	</div>
+</div>
+<center><img src="img/onelinelogo.png" class="imglogo5"></center>
+<div class="title center"><h3 class="title textcolour" style="text-transform:capitalize;"> Hello {{username}} 
+</h3></div>
+<div class="row">
+	
+	<div class="col col-30">
+	   <div class="card dash-menu green text-center" ng-click="search()">
+	           <img src="img/mrg.jpg" style="width:100%;"> 
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext"> Search Matrimonials (वैवाहिक खोज) </p>
+		</div>
+	  </div>
+	  
+	<div class="col col-30">
+	   <div class="card dash-menu blue text-center" ng-click="profile()">
+	   <i class="icon ion-android-people  "></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">My Account<br> (मेरा खाता)</p>
+		</div>
+	  
+	</div>
+	
+	<div class="col col-30">
+	   <div class="card dash-menu red text-center" ng-click="requests()">
+	   <i class="icon ion-pull-request"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">Requests <br> (अनुरोधों)</p><div class="round-button4">
+	<span style="position: relative;
+    color: white;bottom: 15px;">{{requestscount}}</span> 
+	</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	
+	<div class="col col-30">
+	   <div class="card dash-menu cyan text-center" ng-click="createprofile()">
+	           <img src="img/mrg.jpg" style="width:100%;">    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">Create Matrimonial Profile <br>(वैवाहिक प्रोफ़ाइल बनाएं)</p>
+		</div>
+	  </div>
+	  
+	<div class="col col-30">
+	   <div class="card dash-menu black text-center" ng-click="userprofiles()">
+	   <img src="img/mrg.jpg" style="width:100%;">   
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">My Matrimonial Profiles <br> (मेरी वैवाहिक प्रोफाइल)</p>
+		</div>
+	  
+	</div>
+	<div class="col col-30">
+	   <div class="card dash-menu yellow text-center" ng-click="mymessages()">
+	   <i class="icon ion-android-chat"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">My Matrimonial Messages <br> (मेरे मैट्रिमोनियल संदेश)</p><div class="round-button5">
+	<span style="position: relative;
+    color: white;bottom: 15px;">{{messagesnumber}}</span> 
+	</div>
+		</div>
+	</div>
+</div>
+	<div class="row">
+
+	<div class="col col-30">
+	   <div class="card dash-menu pink text-center" ng-click="career()">
+	   <i class="icon ion-ios-people"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext1">Careers <br> (कैरियर्स )</p>
+		</div>
+	</div>
+	<div class="col col-30">
+	   <div class="card dash-menu transparent text-center" ng-click="members()">
+	   <i class="icon ion-person-stalker"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext2">Members <br> (सदस्य)</p>
+		</div>
+	</div>
+	<div class="col col-30">
+	   <div class="card dash-menu brown text-center" ng-click="resetpassword()">
+	   <i class="icon ion-person-stalker"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">Change Password <br> (पासवर्ड बदलें)</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+
+	<div class="col col-30">
+	   <div class="card dash-menu lightgreen text-center" ng-click="membermessages()">
+	   <i class="icon ion-android-chat"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="messagetext">My Messages <br> (मेरे संदेश )</p><div class="round-button3">
+	<span style="position: relative;
+    color: white;bottom: 15px;">{{messages}}</span> 
+	</div>
+		</div>
+	</div>
+	<div class="col col-30">
+	   <div class="card dash-menu3 lightorange text-center" ng-click="upgradeaccount()">
+	   <i class="icon ion-ios-star-outline"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="messagetext2">Membership Fee <br> (मेम्बरशिप फी   )</p>
+		</div>
+	</div>
+	<div class="col col-30"><div class="card dash-menu4 cyan2 text-center" ng-click="careerdetail()">
+	   <i class="icon ion-arrow-expand"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext7">Career Details <br> (कैरियर विवरण)</p>
+		</div></div>
+	<div class="col col-10"></div>
+</div>
+<div class="row">
+<div class="col col-30">
+	 <div class="card dash-menu green text-center" ng-click="logout()">
+	   <i class="icon ion-log-out"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext15">Logout <br> (लोग आउट)</p>
+		</div> 
+	</div>
+<div class="col col-30" ng-show="admincontent">
+	  <div class="card dash-menu3 tengent text-center" ng-click="agent()">
+	   <i class="icon ion-person"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext8">Admin <br> (व्यवस्थापक)</p>
+		</div> 
+	</div>
+	<div class="col col-30"></div>
+	<div class="col col-10"></div>
+</div>
+
+<div class="bottomtagline2"> Developed & Maintained By <br><span style="color:red"> Pramod Kumar Keshri</span>,<br>
+                             Barhi, Hazaribagh, Jharkhand <br>
+                             Whatsapp: 9356704158 <br>
+                             Email: keshripramod@gmail.com <br>
+
+                              </div>
+							  
+ <p class="listingpara"> LISTING <span style="color:red"> APP </span> </p>
+<ion-item ng-repeat="x in persons">{{x.name}}</ion-item> 
+</ion-content>
+</ion-view> -->
+
+<ion-view>
+<ion-content>
+<div ng-show="paymentbutton" class="paymenttag1">
+<center style="margin-bottom: -15%;
+    padding-top: 5%;">Please pay your pending fee {{payment}}<center>
+<div class="pm-button1">
+       <a ng-click="newlink3()">
+                <img src="https://www.payumoney.com//media/images/payby_payumoney/buttons/211.png" />
+            </a>    		
+	</div>
+</div>
+<h3 class="centeralign3" ng-show="paidmember"> You are a paidmember </h3>
+<center><img src="img/onelinelogo.png" class="imglogo5"></center>
+<div class="title center"><h3 class="title textcolour" style="text-transform:capitalize;"> Hello {{username}} 
+</h3></div>
+<div class="row">
+	
+	<div class="col col-30">
+	   <div class="card dash-menu green text-center" ng-click="search()">
+	           <img src="img/mrg.jpg" style="width:100%;"> 
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext"> Search Matrimonials (वैवाहिक खोज) </p>
+		</div>
+	  </div>
+	  
+	<div class="col col-30">
+	   <div class="card dash-menu blue text-center" ng-click="profile()">
+	   <i class="icon ion-android-people  "></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">My Account<br> (मेरा खाता)</p>
+		</div>
+	  
+	</div>
+	
+	<div class="col col-30">
+	   <div class="card dash-menu red text-center" ng-click="requests()">
+	   <i class="icon ion-pull-request"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">Requests <br> (अनुरोधों)</p><div class="round-button4">
+	<span style="position: relative;
+    color: white;bottom: 15px;">{{requestscount}}</span> 
+	</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	
+	<div class="col col-30">
+	   <div class="card dash-menu cyan text-center" ng-click="createprofile()">
+	           <img src="img/mrg.jpg" style="width:100%;">    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">Create Matrimonial Profile <br>(वैवाहिक प्रोफ़ाइल बनाएं)</p>
+		</div>
+	  </div>
+	  
+	<div class="col col-30">
+	   <div class="card dash-menu black text-center" ng-click="myprofiles()">
+	   <img src="img/mrg.jpg" style="width:100%;">   
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">My Matrimonial Profiles <br> (मेरी वैवाहिक प्रोफाइल)</p>
+		</div>
+	  
+	</div>
+	<div class="col col-30">
+	   <div class="card dash-menu yellow text-center" ng-click="mymessages()">
+	   <i class="icon ion-android-chat"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">My Matrimonial Messages <br> (मेरे मैट्रिमोनियल संदेश)</p><div class="round-button5">
+	<span style="position: relative;
+    color: white;bottom: 15px;">{{messagesnumber}}</span> 
+	</div>
+		</div>
+	</div>
+</div>
+	<div class="row">
+
+	<div class="col col-30">
+	   <div class="card dash-menu pink text-center" ng-click="career()">
+	   <i class="icon ion-ios-people"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext1">Careers <br> (कैरियर्स )</p>
+		</div>
+	</div>
+	<div class="col col-30">
+	   <div class="card dash-menu transparent text-center" ng-click="members()">
+	   <i class="icon ion-person-stalker"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext2">Members <br> (सदस्य)</p>
+		</div>
+	</div>
+	<div class="col col-30">
+	   <div class="card dash-menu brown text-center" ng-click="resetpassword()">
+	   <i class="icon ion-person-stalker"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">Change Password <br> (पासवर्ड बदलें)</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+
+	<div class="col col-30">
+	   <div class="card dash-menu lightgreen text-center" ng-click="membermessages()">
+	   <i class="icon ion-android-chat"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="messagetext">My Messages <br> (मेरे संदेश )</p><div class="round-button3">
+	<span style="position: relative;
+    color: white;bottom: 15px;">{{messages}}</span> 
+	</div>
+		</div>
+	</div>
+	<div class="col col-30">
+	   <div class="card dash-menu3 lightorange text-center" ng-click="upgradeaccount()">
+	   <i class="icon ion-ios-star-outline"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="messagetext2">Membership Fee <br> (मेम्बरशिप फी   )</p>
+		</div>
+	</div>
+	<div class="col col-30"><div class="card dash-menu4 cyan2 text-center" ng-click="careerdetail()">
+	   <i class="icon ion-arrow-expand"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext7">Career Details <br> (कैरियर विवरण)</p>
+		</div></div>
+	<div class="col col-10"></div>
+</div>
+<div class="row">
+<div class="col col-30">
+	 <div class="card dash-menu green text-center" ng-click="logout()">
+	   <i class="icon ion-log-out"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext">Logout <br> (लोग आउट)</p>
+		</div> 
+	</div>
+<div class="col col-30">
+	 <div class="card dash-menu8 darkorange text-center" ng-click="invite()">
+	   <i class="icon ion-person-add"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext11">Add/Invite Users <br> (ऐड /इन्विते  उसेर्स )</p>
+		</div> 
+	</div>
+	<div class="col col-30" ng-show="admincontent">
+	  <div class="card dash-menu7 tengent text-center" ng-click="agent()">
+	   <i class="icon ion-person"></i>    
+		</div>	
+		<div class="text-menu">
+			 <p class="cardtext13">Admin <br> (व्यवस्थापक)</p>
+		</div> 
+	</div>
+	<div class="col col-30"></div>
+	<div class="col col-30"></div>
+	<div class="col col-10"></div>
+</div>
+
+<div class="bottomtagline2"> Developed & Maintained By <br><span style="color:red"> Pramod Kumar Keshri</span>,<br>
+                             Barhi, Hazaribagh, Jharkhand <br>
+                             Whatsapp: 9356704158 <br>
+                             Email: keshripramod@gmail.com <br>
+
+                              </div>
+							  
+<!-- <p class="listingpara"> LISTING <span style="color:red"> APP </span> </p>
+<ion-item ng-repeat="x in persons">{{x.name}}</ion-item> -->
+</ion-content>
+</ion-view> 

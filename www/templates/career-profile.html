@@ -1,0 +1,313 @@
+<ion-view class="content-conatiner">
+  <ion-header-bar class="bar-assertive">
+      <i class="icon ion-arrow-left-c  headericon" ng-click="home()"></i>
+  <h1 class="title centeralign">Career Profile</h1>
+
+  </ion-header-bar>
+  <ion-content>
+   <div class="list padding" >
+<!--   <img ng-show="imgpath !== undefined" ng-src="{{imgpath}}" class="roundimage6">
+    <img ng-show="imgpath === undefined" ng-src="img/78.png" class="roundimage6">
+		 <button class="button button-full button-assertive centerbutton" ng-click="capturephoto()">Upload Photo</button> -->
+	<div class="spc">
+	<select class="div-toggle" ng-model="user.type" data-target=".my-info-1">
+			  <option value=""  data-show=".citrus" disabled selected hidden>Jobs</option> 
+			  <option value="0" data-show=".citrus">Are You Looking For Job?</option>
+			  <option value="1" data-show=".pome">You  Can Provide Or Help For Job?</option>
+			  <option value="2" data-show=".pome">Career Suggesstion guidelines</option>
+			 
+			   
+		</select>
+		</div>
+      <div class="my-info-1">
+    <div class="citrus hide"><label class="item item-input spc">
+		
+        <input type="text" placeholder="Name" ng-model="user.name">
+  
+          
+        </label>
+		<div class="spc">
+      	<select ng-model="user.education">
+			  <option value="" disabled selected hidden> Qualification</option> 
+			  <option>10TH</option>
+			  <option>12TH</option>
+			  <option>Bachelor of Business Administration(B.B.A)</option>
+						<option>Bachelor of Commerce(B.Com)</option>
+						<option>Bachelor of Computer Applications(B.C.A)</option>
+						<option>Bachelor of Dental Surgery(B.D.S)</option>
+						<option>Bachelor of Design(B.Des/B.D)</option>
+						<option>Bachelor of Education(B.Ed)</option>
+						<option>Bachelor of Engineering(B.E./B.Tech)</option>
+						<option>Bachelor of Fine Arts(BFA/BVA)</option>
+						<option>Bachelor of Fisheries Science(B.F.Sc/B.Sc)</option>
+						<option>Bachelor of Homoeopathic Medicine and Surgery (B.H.M.S)</option>
+						<option>Bachelor of Laws(L.L.B)</option>
+						<option>Bachelor of Library Science(B.Lib/B.Lib.Sc)</option>
+						<option>Bachelor of Mass Communications(B.M.C/B.M.M)</option>
+						<option>Bachelor of Medicine and Bachelor of Surgery(M.B.B.S)</option>
+						<option>Bachelor of Nursing</option>
+						<option>Bachelor of Pharmacy(B.Pharm/B.Pharma)</option>
+						<option>Bachelor of Physical Education(B.P.Ed)</option>
+						<option>Bachelor of Physiotherapy(B.P.T)</option>
+						<option>Bachelor of Science(B.Sc)</option>
+						<option>Bachelor of Social Work(BSW/B.A.)</option>
+						<option>Bachelor of Veterinary Science & Animal Husbandry(B.V.Sc/B.V.Sc)</option>
+						<option>Doctor of Medicine(M.D)</option>
+						<option>Doctor of Medicine in Homoeopathy(M.D)</option>
+						<option>Doctor of Pharmacy(Pharm.D)</option>
+						<option>Doctor of Philosophy(Ph.D)</option>
+						<option>Doctorate of Medicine(D.M)</option>
+						<option>Master of Architecture(M.Arch)</option>
+						<option>Master of Arts(M.A)</option>
+						<option>Master of Business Administration(M.B.A)</option>
+						<option>Master of Chirurgiae(M.Ch)</option>
+						<option>Master of Commerce(M.Com)</option>
+						<option>Master of Computer Applications(M.C.A)</option>
+						<option>Master of Dental Surgery(M.D.S)</option>
+						<option>Master of Design(M.Des/M.Design)</option>
+						<option>Master of Education(M.Ed)</option>
+						<option>Master of Engineering(M.Tech)</option>
+						<option>Master of Fine Arts(MFA)</option>
+						<option>Master of Laws(L.L.M)</option>
+						<option>Master of Library Science(M.Lib.Sc)</option>
+						<option>Master of Mass Communications(M.M.C)</option>
+						<option>Master of Pharmacy(M.Pharm)</option>
+						<option>Master of Philosophy(M.Phil)</option>
+						<option>Master of Physical Education(M.P.Ed)</option>
+						<option>Master of Physiotherapy(M.P.T)</option>
+						<option>Master of Science(M.Sc)</option>
+						<option>Master of Social Work(M.S.W)</option>
+						<option>Master of Surgery(M.S)</option>
+						<option>Master of Veterinary Science(M.V.Sc)</option>
+						<option>Bachelor Degrees</option>
+	</select>
+		</div>
+		<div class="spc">
+<select ng-model="user.locationstate" ng-change="changestate(user)">
+			  <option value="" disabled selected hidden> State</option> 
+			  <option ng-repeat="states in India">{{states.State}}</option>
+			  
+	</select>
+		</div>
+		<div class="spc">
+<select ng-model="user.locationcity">
+			  <option value="" disabled selected hidden> City</option> 
+			  <option ng-repeat="city in cities">{{city.city}}</option>
+			  
+	</select>
+		</div>
+		<label class="item item-input spc">
+         
+		 <input type="text" placeholder="Your Skills" ng-model="user.skills">
+          
+        </label>
+		<div class="spc">
+      	<select ng-model="user.years">
+			  <option value="" disabled selected hidden> No. Of Years Experienced</option> 
+			  <option value="1">1 Year</option>
+			  <option value="2">2 Years</option>
+			  <option value="3">3 Years</option>
+						<option value="4">4 Years</option>
+						<option value="5">5 Years</option>
+						<option value="6">6 Years</option>
+						<option value="7">7 Years</option>
+						<option value="8">8 Years</option>
+						<option value="9">9 Years</option>
+						<option value="10">10 Years</option>
+						<option value="11">11 Years</option>
+						<option value="12">12 Years</option>
+						<option value="13">13 Years</option>
+						<option value="14">14 Years</option>
+						<option value="15">15 Years</option>
+						<option value="16">16 Years</option>
+						<option value="17">17 Years</option>
+						<option value="18">18 Years</option>
+						<option value="19">19 Years</option>
+						<option value="20">20 Years</option>
+	</select>
+		</div>
+		<div class="spc">
+      	<select ng-model="user.industry">
+			  <option value="" disabled selected hidden> Industry</option> 
+			  <option>Banking</option>
+			  <option>Automobile</option>
+			  <option>Computers</option>
+			  <option>Electrical</option>
+			<option>Marketing</option>
+		</select>
+		</div>
+		<label class="item item-input spc">
+         
+		 <input type="text" placeholder="Career Objective" ng-model="user.objective">
+          
+        </label>
+		<form name="myform">
+		<span ng-show="myform.myAddress.$error.email">Not a valid e-mail address</span>
+		<label class="item item-input spc">
+         
+		 <input type="email" placeholder="your email" name="myAddress" ng-model="user.email">
+          
+        </label>
+		</form>
+		 <form class="form-horizontal" role="form" method="post" name="registration" novalidate>
+		 <span class="help-block" 
+                  ng-show="((registration.phone.$error.minlength ||
+                           registration.phone.$error.maxlength) && 
+                           registration.phone.$dirty) ">
+                           phone number should be 10 digits
+            </span>
+		<label class="item item-input spc">
+         
+		 <input type="number" ng-minlength="10" name="phone" ng-maxlength="10" placeholder="your mobile" ng-model="user.number">
+          
+        </label></div>
+		</form>
+		<button class="button button-block button-assertive" ng-click="careerprofile(user)">Create Career profile</button>
+  <div class="pome hide"><label class="item item-input spc">
+		
+        <input type="text" placeholder="Name (required)" ng-model="user.name">
+  
+          
+        </label>
+		<div class="spc">
+      	<select ng-model="user.education">
+			  <option value="" disabled selected hidden> Qualification (required)</option> 
+			  <option>10TH</option>
+			  <option>12TH</option>
+			  <option>Bachelor of Business Administration(B.B.A)</option>
+						<option>Bachelor of Commerce(B.Com)</option>
+						<option>Bachelor of Computer Applications(B.C.A)</option>
+						<option>Bachelor of Dental Surgery(B.D.S)</option>
+						<option>Bachelor of Design(B.Des/B.D)</option>
+						<option>Bachelor of Education(B.Ed)</option>
+						<option>Bachelor of Engineering(B.E./B.Tech)</option>
+						<option>Bachelor of Fine Arts(BFA/BVA)</option>
+						<option>Bachelor of Fisheries Science(B.F.Sc/B.Sc)</option>
+						<option>Bachelor of Homoeopathic Medicine and Surgery (B.H.M.S)</option>
+						<option>Bachelor of Laws(L.L.B)</option>
+						<option>Bachelor of Library Science(B.Lib/B.Lib.Sc)</option>
+						<option>Bachelor of Mass Communications(B.M.C/B.M.M)</option>
+						<option>Bachelor of Medicine and Bachelor of Surgery(M.B.B.S)</option>
+						<option>Bachelor of Nursing</option>
+						<option>Bachelor of Pharmacy(B.Pharm/B.Pharma)</option>
+						<option>Bachelor of Physical Education(B.P.Ed)</option>
+						<option>Bachelor of Physiotherapy(B.P.T)</option>
+						<option>Bachelor of Science(B.Sc)</option>
+						<option>Bachelor of Social Work(BSW/B.A.)</option>
+						<option>Bachelor of Veterinary Science & Animal Husbandry(B.V.Sc/B.V.Sc)</option>
+						<option>Doctor of Medicine(M.D)</option>
+						<option>Doctor of Medicine in Homoeopathy(M.D)</option>
+						<option>Doctor of Pharmacy(Pharm.D)</option>
+						<option>Doctor of Philosophy(Ph.D)</option>
+						<option>Doctorate of Medicine(D.M)</option>
+						<option>Master of Architecture(M.Arch)</option>
+						<option>Master of Arts(M.A)</option>
+						<option>Master of Business Administration(M.B.A)</option>
+						<option>Master of Chirurgiae(M.Ch)</option>
+						<option>Master of Commerce(M.Com)</option>
+						<option>Master of Computer Applications(M.C.A)</option>
+						<option>Master of Dental Surgery(M.D.S)</option>
+						<option>Master of Design(M.Des/M.Design)</option>
+						<option>Master of Education(M.Ed)</option>
+						<option>Master of Engineering(M.Tech)</option>
+						<option>Master of Fine Arts(MFA)</option>
+						<option>Master of Laws(L.L.M)</option>
+						<option>Master of Library Science(M.Lib.Sc)</option>
+						<option>Master of Mass Communications(M.M.C)</option>
+						<option>Master of Pharmacy(M.Pharm)</option>
+						<option>Master of Philosophy(M.Phil)</option>
+						<option>Master of Physical Education(M.P.Ed)</option>
+						<option>Master of Physiotherapy(M.P.T)</option>
+						<option>Master of Science(M.Sc)</option>
+						<option>Master of Social Work(M.S.W)</option>
+						<option>Master of Surgery(M.S)</option>
+						<option>Master of Veterinary Science(M.V.Sc)</option>
+						<option>Bachelor Degrees</option>
+	</select>
+		</div>
+		<div class="spc">
+<select ng-model="user.locationstate" ng-change="changestate(user)">
+			  <option value="" disabled selected hidden> State</option> 
+			  <option ng-repeat="states in India">{{states.State}}</option>
+			  
+	</select>
+		</div>
+		<div class="spc">
+<select ng-model="user.locationcity">
+			  <option value="" disabled selected hidden> City</option> 
+			  <option ng-repeat="city in cities">{{city.city}}</option>
+			  
+	</select>
+		</div>
+		<label class="item item-input spc">
+         
+		 <input type="text" placeholder="Skills" ng-model="user.skills">
+          
+        </label>
+		<div class="spc">
+      	<select ng-model="user.years">
+			  <option value="" disabled selected hidden> No. Of Years Experienced (required)</option> 
+			  <option value="1">1 Year</option>
+			  <option value="2">2 Years</option>
+			  <option value="3">3 Years</option>
+						<option value="4">4 Years</option>
+						<option value="5">5 Years</option>
+						<option value="6">6 Years</option>
+						<option value="7">7 Years</option>
+						<option value="8">8 Years</option>
+						<option value="9">9 Years</option>
+						<option value="10">10 Years</option>
+						<option value="11">11 Years</option>
+						<option value="12">12 Years</option>
+						<option value="13">13 Years</option>
+						<option value="14">14 Years</option>
+						<option value="15">15 Years</option>
+						<option value="16">16 Years</option>
+						<option value="17">17 Years</option>
+						<option value="18">18 Years</option>
+						<option value="19">19 Years</option>
+						<option value="20">20 Years</option>
+	</select>
+		</div>
+		<div class="spc">
+      	<select ng-model="user.industry">
+			  <option value="" disabled selected hidden> Industry</option> 
+			  <option>Banking</option>
+			  <option>Automobile</option>
+			  <option>Computers</option>
+			  <option>Electrical</option>
+			<option>Marketing</option>
+		</select>
+		</div>
+		<label class="item item-input spc">
+         
+		 <input type="text" placeholder="Career Objective" ng-model="user.objective">
+          
+        </label>
+		<form name="myform1">
+		<span ng-show="myform1.myAddress1.$error.email">Not a valid e-mail address</span>
+		<label class="item item-input spc">
+         
+		 <input type="email" placeholder="email (required)" ng-model="user.email" name="myAddress1">
+          
+        </label>
+		</form>
+		<form class="form-horizontal" role="form" method="post" name="registration1" novalidate>
+		 <span class="help-block" 
+                  ng-show="((registration1.phone1.$error.minlength ||
+                           registration1.phone1.$error.maxlength) && 
+                           registration1.phone1.$dirty) ">
+                           phone number should be 10 digits
+            </span>
+		<label class="item item-input spc">
+         
+		 <input type="number" placeholder="mobile (required)" ng-minlength="10" ng-maxlength="10" name="phone1" ng-model="user.number">
+          
+        </label>
+		</form>
+		</div></div>
+		 <button class="button button-block button-assertive" ng-click="careerprofile(user)">Create Career profile</button>
+</div>
+		
+  </ion-content>
+</ion-view>

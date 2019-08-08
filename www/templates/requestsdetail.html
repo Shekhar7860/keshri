@@ -1,0 +1,70 @@
+<ion-view>
+<ion-header-bar align-title="left" class="bar-assertive">
+  <div class="buttons">
+ <i class="icon ion-arrow-left-c headericon" ng-click="requestspage()"></i>
+  </div>
+  {{user}}
+  <h1 class="title centeralign">{{receivername}}</h1>
+</ion-header-bar>
+<ion-content>
+  <p class="profilerequest"> Request From </p>
+<div class="card">
+<div class="row">
+        <div class="col col-40" style="font-size:10px;"><img src="{{senderimage}}" class="roundimage"><br><span class="textcolour"> Posted by </span>: {{senderpostedby}}<br><span class="textcolour"> Mobile </span><span class="restricted">:{{sendermobile}} </span> <br><span class="textcolour"> Posted </span> : {{senderpostingtime}}</div>
+		<div class="col col-60"><div style="font-size: 20px;
+    font-weight: bold; color:#ef473a"> {{sendername}} </div> <br><span class="textcolour"> About </span>:{{senderabout}} <br><span class="textcolour"> Age </span>: {{senderdob}} <br> <span class="textcolour"> Father's name </span> :{{senderfathersname}}<br> <span class="textcolour">Complexion </span> :{{sendercomplexion}} <br> <span class="textcolour"> Education </span>: {{sendereducation}} <br> <span class="textcolour"> Message </span>: {{sendermessage}}<br><span class="textcolour"> From </span>: {{senderlocation}} <br><span class="textcolour"> Height </span>: {{senderheight}} <br><span class="textcolour"> Weight </span>: {{senderweight}}<br><span class="textcolour"> Birthplace </span>: {{senderbirthplace}}<br><span class="textcolour"> Birthtime </span>: {{senderbirthtime}}<br><span class="textcolour"> Brotheroccupation </span>: {{senderbrotheroccupation}}<br><span class="textcolour"> Date of birth </span>: {{senderdateofbirth}} <br><span class="textcolour"> Father's occupation </span>: {{senderfatheroccupation}} <br><span class="textcolour"> Mother's occupation </span>: {{sendermotheroccupation}} <br><span class="textcolour"> Sister's occupation</span>: {{sendersisteroccupation}} <br><span class="textcolour"> Gotra </span>: {{sendergotra}} <br><span class="textcolour"> Hobby </span>: {{senderhobby}}<br><span class="textcolour"> Kul Devta </span>: {{senderkuldevta}} <br><span class="textcolour"> Kundli </span>: {{senderkundli}} <br><span class="textcolour"> Income </span>: {{senderincome}}  <br><span class="textcolour"> Occupation </span>: {{senderoccupation}}<br><span class="textcolour"> Preference Service</span>: {{senderpreferenceservice}}  <br><span class="textcolour"> Email </span><span class="restricted">: {{senderemailid}} </span>               </div>
+		
+	</div>
+</div>
+   <p class="profilerequest"> Your Profile </p>
+<div class="card">
+<div class="row">
+ 
+		<div class="col col-40" style="font-size:10px;"><img src="{{receiverimage}}" class="roundimage"><br><span class="textcolour"> Posted by </span>: {{receiverpostedby}} <br><span class="textcolour"> Mobile </span>:{{receivermobile}}  <br><span class="textcolour"> Posted </span> : {{receiverpostingtime}} </div>
+		<div class="col col-60"><div style="font-size: 20px;
+    font-weight: bold;color:#ef473a"> {{receivername}} </div> <br><span class="textcolour"> About </span> :  {{receiverabout}} <br><span class="textcolour"> Age </span>:  {{receiverdob}} <br> <span class="textcolour">Father's name </span> :  {{receiverfathersname}}<br> <span class="textcolour">Complexion </span> :{{receivercomplexion}} <br> <span class="textcolour"> Education </span>:   {{receivereducation}} <br> <span class="textcolour"> From: </span> {{receiverlocation}} <br> <span class="textcolour"> Height </span>: {{receiverheight}} <br> <span class="textcolour"> Weight </span> : {{receiverweight}}<br><span class="textcolour"> Birthplace </span>: {{receiverbirthplace}}<br><span class="textcolour"> Birthtime </span>: {{receiverbirthtime}}<br><span class="textcolour"> Brotheroccupation </span>: {{receiverbrotheroccupation}}<br><span class="textcolour"> Date of birth </span>: {{receiverdateofbirth}} <br><span class="textcolour"> Father's occupation </span>: {{receiverfatheroccupation}} <br><span class="textcolour"> Mother's occupation </span>: {{receivermotheroccupation}} <br><span class="textcolour"> Sister's occupation</span>: {{receiversisteroccupation}} <br><span class="textcolour"> Gotra </span>: {{receivergotra}} <br><span class="textcolour"> Hobby </span>: {{receiverhobby}}<br><span class="textcolour"> Kul Devta </span>: {{receiverkuldevta}} <br><span class="textcolour"> Kundli </span>: {{receiverkundli}} <br><span class="textcolour"> Income </span>: {{receiverincome}}  <br><span class="textcolour"> Occupation </span>: {{receiveroccupation}}<br><span class="textcolour"> Preference Service</span>: {{receiverpreferenceservice}}  <br><span class="textcolour"> Email </span>: {{receiveremailid}}  </div>
+	</div>
+</div>
+<div class="row">
+   <div class="col col-50" ng-click="accept()">	
+	<label class="item item-input" style="background:red;height: 35px">
+	<p class="accept"> ACCEPT REQUEST AND DISCUSS</p>
+  </label>
+   </div>
+  <div class="col col-50" ng-click="reject()">
+	<label class="item item-input labelheight1" style="height: 35px;">
+	<p class="reject"> REJECT REQUEST </p>
+  </label>
+    </div>
+	</div>
+<!--
+<div class="card"  ng-repeat="user in senders">
+	<div class="row">
+		<div class="col col-30" style="font-size:10px;"><img src="img/78.png" style="width:100%;"><br><div style="background: #e62213;
+    color: white;"><i class = "icon icon ion-chatbubble"> </i>Message now</div> </div>
+		<div class="col col-60"><div style="font-size: 25px;
+    font-weight: bold;"> {{user.sender_name}} </div> <br> Location :{{message.location}} <br> Height:{{message.height}} <br> Complexion :{{message.complexion}} <br> Education: {{message.education}} </div>
+		<div class="col col-10" ng-click="sendmessage(user)"><i class = "icon  ion-edit" style="font-size: 15px;" ng-click="edit(user)"><br><div class="interesticon"><i class = "icon ion-heart"> </i>Send interest</div>  </i></div>
+	</div>
+<div class="item item-divider" style="background:#ccc;">
+	<div class="row">
+   <div class="col col-10"></div>
+   <div class="col col-40">	
+	<label class="item item-input" style="background:red;">
+	<p> ACTIVATE </p>
+  </label>
+   </div>
+  <div class="col col-10"></div>
+  <div class="col col-40">
+	 <span></span>
+	<label class="item item-input labelheight1">
+	<p style="position: relative;
+    right: 7%;"> DEACTIVATE</p>
+  </label>
+    </div>
+	</div>
+</div>
+</div> -->
+
+</ion-content>
+</ion-view>

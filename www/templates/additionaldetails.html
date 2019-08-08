@@ -1,0 +1,286 @@
+<ion-view>
+<ion-header-bar class="bar-assertive">
+<div class="buttons">
+<i class="icon ion-arrow-left-c headericon" ng-click="createpage()"></i>
+</div>
+<h1 class="title centeralign"> Additional Details (अतिरिक्त जानकारिया) </h1>
+</ion-header-bar>
+<ion-content>
+<div class="list padding">
+ 
+	 <h3 class="centeralign"> Personal Details <br> (व्यक्तिगत विवरण) </h3>
+  
+		
+<label class="item item-input spc labelborder">
+ <input type="text"  ng-model="newuser.Date_of_birth"  placeholder="Date Of Birth(optional) (जन्म की तारीख)"/>
+  </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Birth time (optional) (जन्म का समय)" ng-model="newuser.Birth_time">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Birth place (optional) (जन्म स्थान)" ng-model="newuser.Birth_place">
+   
+          
+        </label>
+		
+		
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Income (optional) (आय)" ng-model="newuser.Income">
+   
+          
+        </label>
+		
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="hobby (optional) (शौक)" ng-model="newuser.hobby">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="occupation (optional) (कब्जे)" ng-model="newuser.occupation">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Father's Occupation (optional) (पिता का व्यवसाय)" ng-model="newuser.FatherOccupation">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Mother's Occupation (optional) (मां का व्यवसाय)" ng-model="newuser.MotherOccupation">
+   
+          
+        </label>
+
+		
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Brother's Occupation (optional) (भाई का व्यवसाय)" ng-model="newuser.BrotherOccupation" >
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Sister's Occupation (optional) (दीदी का व्यवसाय)" ng-model="newuser.SisterOccupation">
+   </label>
+   	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Family status (optional) (पारिवारिक स्थिति)" ng-model="newuser.Familystatus">
+   </label>
+    	
+   
+   	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Gotra (optional) (गोत्र)" ng-model="newuser.Gotra">
+   </label>
+   	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="KulDevta/Baan (optional) (कुल देवता/बाण ))" ng-model="newuser.KulDevta">
+   </label>
+    	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Kundle (optional) (कुंडली)" ng-model="newuser.Kundle">
+   </label>
+    <label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Mobile (optional) (मोबाइल)" ng-model="newuser.Mobile">
+   </label>
+    <label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Email id (optional) (ईमेल आईडी)" ng-model="newuser.Emailid">
+   </label>
+		
+		
+		  <h3 class="centeralign"> Preferences (पसंद) </h3>
+		  <div class="spc">
+		<select class="selectinput" ng-model="newuser.services" name="newuser.age" style="margin-top:3%;">
+			  <option value="" disabled selected hidden> Preferences_service (optional) (
+प्राथमिकता सेवा) </option>
+			  <option value="Business">Business</option>
+			  <option value="Education">Education </option>
+			  <option value="Manglik">Manglik </option>
+			  <option value="Professional">Professional </option>
+			  <option value="Gharelu">Gharelu </option>
+			   <option value="Vidva">Vidva </option>
+			   <option value="Vidur">Vidur </option>
+			   <option value="Talakshuda">Talakshuda</option>
+			   <option value="Divyang ">Divyang </option>
+				
+			   
+		</select>
+		</div>
+		<div class="spc">
+		<select class="selectinput" ng-model="newuser.agefrom" name="newuser.age" style="margin-top:3%;">
+			  <option value="" disabled selected hidden>Age From (optional) (से आयु)</option> 
+			  <option value="18">18 Yrs </option>
+			  <option value="19">19 Yrs </option>
+			  <option value="20">20 Yrs </option>
+			  <option value="21">21 Yrs </option>
+			  <option value="22">22 Yrs </option>
+			   <option value="23">23 Yrs </option>
+			   <option value="24">24 Yrs </option>
+			   <option value="25">25 Yrs </option>
+			   <option value="26">26 Yrs </option>
+		       <option value="27">27 Yrs </option>
+			  
+				  <option value="28">28 Yrs </option>
+				  <option value="29">29 Yrs </option>
+				  <option value="30">30 Yrs </option>
+			  <option value="31">31 Yrs </option>
+				  <option value="32">32 Yrs </option>
+			      <option value="33">33 Yrs </option>
+				  <option value="34">34 Yrs </option>
+				  <option value="35">35 Yrs </option>
+				  <option value="36">36 Yrs </option>
+				  <option value="37">37 Yrs </option>
+				  <option value="38">38 Yrs </option>
+				  <option value="39">39 Yrs </option>
+				  <option value="40">40 Yrs </option>
+				
+			   
+		</select>
+		</div>
+		<div class="spc">
+		<select class="selectinput" ng-model="newuser.ageto" name="newuser.age" style="margin-top:3%;">
+			  <option value="" disabled selected hidden>Age To (optional) (उम्र के लिए)</option> 
+			  <option value="18">18 Yrs </option>
+			  <option value="19">19 Yrs </option>
+			  <option value="20">20 Yrs </option>
+			  <option value="21">21 Yrs </option>
+			  <option value="22">22 Yrs </option>
+			   <option value="23">23 Yrs </option>
+			   <option value="24">24 Yrs </option>
+			   <option value="25">25 Yrs </option>
+			   <option value="26">26 Yrs </option>
+		       <option value="27">27 Yrs </option>
+			  
+				  <option value="28">28 Yrs </option>
+				  <option value="29">29 Yrs </option>
+				  <option value="30">30 Yrs </option>
+			  <option value="31">31 Yrs </option>
+				  <option value="32">32 Yrs </option>
+			      <option value="33">33 Yrs </option>
+				  <option value="34">34 Yrs </option>
+				  <option value="35">35 Yrs </option>
+				  <option value="36">36 Yrs </option>
+				  <option value="37">37 Yrs </option>
+				  <option value="38">38 Yrs </option>
+				  <option value="39">39 Yrs </option>
+				  <option value="40">40 Yrs </option>
+				
+			   
+		</select>
+		</div>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="preference_location (optional) (वरीयता स्थान)" ng-model="newuser.preferencelocation">
+   
+          
+        </label>
+		<div class="spc">
+		<select  class="selectinput" ng-model="newuser.height1" name="newuser.height1">
+			  <option value="" disabled selected hidden> Height From (optional) (ऊंचाई से)</option> 
+			  <option value="4.0">4F</option>
+			  <option value="4.1">4Ft 1"</option>
+			  <option value="4.2">4Ft 2"</option>
+			  <option value="4.3">4Ft 3"</option>
+			  <option value="4.4">4Ft 4"</option>
+			  <option value="4.5">4Ft 5"</option>
+			  <option value="4.6">4Ft 6"</option>
+			  <option value="4.7">4Ft 7"</option>
+			  <option value="4.8">4Ft 8"</option>
+			  <option value="4.9" >4Ft 9"</option>
+			   <option value="4.10" >4Ft 10"</option>
+			   <option value="4.11" >4Ft 11"</option>
+			  
+				<option value="5.0">5F</option>
+				<option value="5.1">5Ft 1"</option>
+				<option value="5.2">5Ft 2"</option>
+				<option value="5.3">5Ft 3"</option>
+				<option value="5.4">5Ft 4"</option>
+			    <option value="5.5">5Ft 5"</option>
+				<option value="5.6">5Ft 6"</option>
+				<option value="5.7">5Ft 7"</option>
+				<option value="5.8">5Ft 8"</option>
+				<option value="5.9">5Ft 9"</option>
+				<option value="5.10">5Ft 10"</option>
+				<option value="5.11">5Ft 11"</option>
+				
+				<option value="6.0">6F</option>
+				<option value="6.1">6Ft 1"</option>
+				<option value="6.2" >6Ft 2"</option>
+				<option value="6.3">6Ft 3"</option>
+			    <option value="6.4">6Ft 4"</option>
+				<option value="6.5">6Ft 5"</option>
+				<option value="6.6">6Ft 6"</option>
+				<option value="6.7">6Ft 7"</option>
+				<option value="6.8">6Ft 8"</option>
+				<option value="6.9">6Ft 9"</option>
+				<option value="6.10">6Ft 10"</option>
+				<option value="6.11">6Ft 11"</option>
+				<option value="7">7F</option>
+			   
+		</select>
+		</div>
+		<select class="selectinput" ng-model="newuser.height2" name="newuser.height">
+			  <option value="" disabled selected hidden>Height To(optional) (ऊंचाई)</option> 
+			  <option value="4.0">4F</option>
+			  <option value="4.1">4Ft 1"</option>
+			  <option value="4.2">4Ft 2"</option>
+			  <option value="4.3">4Ft 3"</option>
+			  <option value="4.4">4Ft 4"</option>
+			  <option value="4.5">4Ft 5"</option>
+			  <option value="4.6">4Ft 6"</option>
+			  <option value="4.7">4Ft 7"</option>
+			  <option value="4.8">4Ft 8"</option>
+			  <option value="4.9" >4Ft 9"</option>
+			   <option value="4.10" >4Ft 10"</option>
+			   <option value="4.11" >4Ft 11"</option>
+			  
+				<option value="5.0">5F</option>
+				<option value="5.1">5Ft 1"</option>
+				<option value="5.2">5Ft 2"</option>
+				<option value="5.3">5Ft 3"</option>
+				<option value="5.4">5Ft 4"</option>
+			    <option value="5.5">5Ft 5"</option>
+				<option value="5.6">5Ft 6"</option>
+				<option value="5.7">5Ft 7"</option>
+				<option value="5.8">5Ft 8"</option>
+				<option value="5.9">5Ft 9"</option>
+				<option value="5.10">5Ft 10"</option>
+				<option value="5.11">5Ft 11"</option>
+				
+				<option value="6.0">6F</option>
+				<option value="6.1">6Ft 1"</option>
+				<option value="6.2" >6Ft 2"</option>
+				<option value="6.3">6Ft 3"</option>
+			    <option value="6.4">6Ft 4"</option>
+				<option value="6.5">6Ft 5"</option>
+				<option value="6.6">6Ft 6"</option>
+				<option value="6.7">6Ft 7"</option>
+				<option value="6.8">6Ft 8"</option>
+				<option value="6.9">6Ft 9"</option>
+				<option value="6.10">6Ft 10"</option>
+				<option value="6.11">6Ft 11"</option>
+				<option value="7">7F</option>
+			   
+		</select>
+	
+          <button class="button button-block button-assertive" ng-click="userdetails(newuser)">Submit (जमा करें)</button>
+		  
+		    
+		 
+    </div>
+		
+	  
+
+</ion-content>
+</ion-view>

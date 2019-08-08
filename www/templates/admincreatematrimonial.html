@@ -1,0 +1,229 @@
+<ion-view>
+<ion-header-bar class="bar-assertive">
+<div class="buttons">
+<i class="icon ion-arrow-left-c headericon" ng-click="adminpage()"></i>
+</div>
+<h1 class="title centeralign"> Create Matrimonial Profile(
+वैवाहिक प्रोफ़ाइल बनाएं) </h1>
+</ion-header-bar>
+<ion-content>
+<div class="list padding">
+ <img ng-show="imgpath !== undefined" ng-src="{{imgpath}}">
+    <img ng-show="imgpath === undefined" ng-src="img/blankperson.jpg" style="width:100%; height: 120px;">
+				
+    <button class="button button-full button-assertive centerbutton" ng-click="getpicture()">Upload Photo (फोटो अपलोड करें)</button>
+	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="User Id (यूज़र आईडी)" ng-model="adminid">
+   
+          
+        </label>
+<div class="spc">
+      	<select ng-model="user.profilefor" name="user.height">
+			  <option value="" disabled selected hidden>Profile for (प्रोफ़ाइल के लिए)</option> 
+			   <option>Self</option>
+			  <option>Friend</option>
+			  <option>Brother</option>
+			  <option>Sister</option>
+			   <option>Daughter</option>
+			    <option>Son</option>
+			  <option>Relative</option>
+			  
+			 
+			  
+			
+			   
+		</select>
+		</div>
+	
+       
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Enter name (नाम दर्ज)" ng-model="user.name">
+   
+          
+        </label>
+		<div class="spc">
+      	<div class="spc">
+		<select ng-model="user.education" ng-options="limit.name as limit.name for limit in list" ng-init="user.education='10th'"></select></div>
+		</div>
+		<div class="spc">
+		<select ng-model="user.dob" name="user.age" style="margin-top:3%;">
+			  <option value="" disabled selected hidden>Enter Age (उम्र दर्ज करें)</option> 
+			  <option value="18">18 Yrs </option>
+			  <option value="19">19 Yrs </option>
+			  <option value="20">20 Yrs </option>
+			  <option value="21">21 Yrs </option>
+			  <option value="22">22 Yrs </option>
+			   <option value="23">23 Yrs </option>
+			   <option value="24">24 Yrs </option>
+			   <option value="25">25 Yrs </option>
+			   <option value="26">26 Yrs </option>
+		       <option value="27">27 Yrs </option>
+			  
+				  <option value="28">28 Yrs </option>
+				  <option value="29">29 Yrs </option>
+				  <option value="30">30 Yrs </option>
+			  <option value="31">31 Yrs </option>
+				  <option value="32">32 Yrs </option>
+			      <option value="33">33 Yrs </option>
+				  <option value="34">34 Yrs </option>
+				  <option value="35">35 Yrs </option>
+				  <option value="36">36 Yrs </option>
+				  <option value="37">37 Yrs </option>
+				  <option value="38">38 Yrs </option>
+				  <option value="39">39 Yrs </option>
+				  <option value="40">40 Yrs </option>
+				
+			   
+		</select>
+		</div>
+<select ng-model="user.height" name="user.height">
+			  <option value="" disabled selected hidden>Enter Height (ऊंचाई दर्ज करें)</option> 
+			  <option value="4.0">4F</option>
+			  <option value="4.1">4Ft 1"</option>
+			  <option value="4.2">4Ft 2"</option>
+			  <option value="4.3">4Ft 3"</option>
+			  <option value="4.4">4Ft 4"</option>
+			  <option value="4.5">4Ft 5"</option>
+			  <option value="4.6">4Ft 6"</option>
+			  <option value="4.7">4Ft 7"</option>
+			  <option value="4.8">4Ft 8"</option>
+			  <option value="4.9" >4Ft 9"</option>
+			  
+				<option value="5.0">5F</option>
+				<option value="5.1">5Ft 1"</option>
+				<option value="5.2">5Ft 2"</option>
+				<option value="5.3">5Ft 3"</option>
+				<option value="5.4">5Ft 4"</option>
+			    <option value="5.5">5Ft 5"</option>
+				<option value="5.6">5Ft 6"</option>
+				<option value="5.7">5Ft 7"</option>
+				<option value="5.8">5Ft 8"</option>
+				<option value="5.9">5Ft 9"</option>
+				
+				<option value="6.0">6F</option>
+				<option value="6.1">6Ft 1"</option>
+				<option value="6.2" >6Ft 2"</option>
+				<option value="6.3">6Ft 3"</option>
+			    <option value="6.4">6Ft 4"</option>
+				<option value="6.5">6Ft 5"</option>
+				<option value="6.6">6Ft 6"</option>
+				<option value="6.7">6Ft 7"</option>
+				<option value="6.8">6Ft 8"</option>
+				<option value="6.9">6Ft 9"</option>
+				
+				<option value="7">7F</option>
+			   
+		</select>
+		
+
+			<div class="spc">
+	<select ng-model="user.weight" name="user.weight" style="margin-top:3%;">
+			  <option value="" disabled selected hidden>Enter Weight (वजन दर्ज करें)</option> 
+			  <option value="40">40 Kg</option>
+				<option value="45">45 Kg</option>
+				<option value="48">48 Kg</option>
+				<option value="50" >50 Kg</option>
+			    <option value="52">52 Kg</option>
+				<option value="55">55 Kg</option>
+				<option value="57">57 Kg</option>
+				<option value="60">60 Kg</option>
+				<option value="62">62 Kg</option>
+				<option value="65">65 Kg</option>
+				<option value="68">68 Kg</option>
+				<option value="70">70 Kg</option>
+				<option value="72">72 Kg</option>
+				<option value="75">75 Kg</option>
+				<option value="78">78 Kg</option>
+				<option value="80">80 Kg</option>
+		</select>
+		</div>
+	
+	
+
+		
+		
+	
+		<div class="spc">
+      	<select ng-model="user.complexion" name="user.complexion">
+			  <option value="" disabled selected hidden> Skin Type (त्वचा प्रकार)</option> 
+			  <option>Fair</option>
+			  <option>Medium</option>
+			  <option>Black</option>
+			  <option>Rough</option>
+			
+		</select>
+		</div>
+	
+<div class="spc"> 		
+<div class="row genderlabel">
+<div class="col col-40">Gender <br> (लिंग): </div>
+		<div class="col col-30">
+		<div class="radio">
+        <label>
+            <input ng-model="user.gender" type="radio" name="rdoResult" ng-value="'Male'">
+              Male <br> (नर)
+        </label>
+    </div>
+	</div>
+	<div class="col col-30">
+    <div class="radio">
+        <label>
+            <input ng-model="user.gender" type="radio" name="rdoResult" ng-value="'Female'">
+             Female <br> (महिला)
+        </label>
+    </div>
+	</div>
+</div>
+</div>
+  
+		
+
+		
+			<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Enter Father's name (पिता का नाम दर्ज करें)" ng-model="user.father_name">
+   
+          
+        </label>
+	<!--	<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Enter Mobile Number" ng-model="user.mobile1">
+   
+          
+        </label>
+		<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="Enter Alternative Mobile Number" ng-model="user.mobile2">
+   
+          
+        </label> -->
+		<form name="aboutform">
+			<label class="item item-input spc labelborder" style="height: 80px;">
+		
+        <input type="text" placeholder="About Girl/Boy (लड़की / लड़के के बारे में)" ng-maxlength="100" name="about" ng-model="user.about" name="about" style="margin-bottom: 10%;">
+   
+          
+        </label>
+		<span class="error" ng-show="aboutform.about.$error.maxlength">
+        Too Long!</span>
+		</form>
+		<!--<label class="item item-input spc labelborder">
+		
+        <input type="text" placeholder="enter weight" ng-model="user.weight">
+   
+          
+        </label>--> 
+		
+		
+         <ion-google-place placeholder="Your location (आपकी स्थिति)" ng-model="user.address" required name="address" location-changed="locationChanged"></ion-google-place>
+          <button class="button button-block button-assertive" ng-click="createadminmatrimony(user)" style="height: 20px;">Create Matrimonial profile (वैवाहिक प्रोफ़ाइल बनाएं)</button>
+		    
+		 
+    </div>
+		
+	  
+
+</ion-content>
+</ion-view>

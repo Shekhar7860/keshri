@@ -1,0 +1,39 @@
+<ion-modal-view style="background:#e5e5e5;">
+<ion-header-bar class="bar-assertive">
+<div class="buttons">
+<i class="icon ion-close headericon" ng-click="modal2.hide()"></i>
+</div>
+<p class="title centeralign" style="font-size: 15px !important;"> From which  profile you want to send interest?</p>
+</ion-header-bar>
+<ion-content>
+<h3 class="centeralign" ng-click="createnewprofile()"> {{creatematrimonial}} </h3>
+<div class="list card card-section"  ng-repeat="profile in profiles" >
+
+  <div class="item item-avatar list-btn" >
+    <img class="requestimage" src="{{profile.photo}}">
+	<div class="middletext">
+    <h2 class="assertive topfonttext1">{{profile.name}}</h2>
+   <p class="topfonttext" style="text-transform:capitalize;"><span style="position: relative;
+    top: 32px;">{{profile.gender}} </span><div class="paymentbuttontop" ng-style="paymentcolor(profile)">  {{profile.payment}} </div> </p>
+   <div class="row">
+      <div class="col col-20">
+    <button class="button button-assertive requestbutton" ng-click="sendmessage(profile)" ng-disabled="profile.status == 'Deactivated'"><p class="requestbuttontext">Send Request</p> </button>
+	   </div>
+	  <div class="col col-80">
+    <p style="text-transform:capitalize;">{{profile.location}} </p>
+    <p style="text-transform:capitalize;"> {{profile.education}} </p>
+	</div>
+	</div>
+	</div>
+	<h3 class="msgtext" >{{profile.message}}</h3>
+	<!--div class="row">
+	 <div class="col col-75">
+	   <h3 class="msgtext" >{{profile.message}}</h3>
+	 </div>
+	 <div class="col col-25" ng-style="paymentcolor(profile)">
+	 {{profile.payment}}
+	 </div>
+  </div-->
+  </div>
+</ion-content>
+</ion-modal-view>
