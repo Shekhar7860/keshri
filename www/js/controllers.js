@@ -135,6 +135,7 @@ $scope.login = function(loginData) {
  
  
   $scope.membersdetail  = function(member){
+    console.log('userid', senderid)
 	  console.log(member.id);
 	  $scope.modal.show();
 	  $http.post('http://listingapp.ssalumni.com/api/user/matrimonial_profile', {id:member.id}).success(function(res){
@@ -1722,7 +1723,7 @@ $scope.education = [{
     class: 'Pharm.D'
   }];     
 $scope.findvalue = function(selectedage1, selectedage,selectedheight1, selectedheight, myeducation, selectedLimit){
-//	$window.location.reload(true);
+	// $window.location.reload(true);
 	window.localStorage.setItem('age1',selectedage1);
 	window.localStorage.setItem('age2',selectedage);
 	window.localStorage.setItem('height1',selectedheight1);
@@ -1753,7 +1754,7 @@ $scope.home = function(){
 	}	
 	$scope.search = function(searchText){
 		 window.localStorage.setItem('searchmember',searchText);
-		// $window.location.reload(true);
+		 $window.location.reload(true);
 		$state.go('filteredbysearchmembers');
 	}	
 	$scope.find = function(){
@@ -1766,7 +1767,7 @@ $scope.home = function(){
 	 console.log(res)
 	 $scope.India = res;})
 	 $scope.showcity = function(state){
-		 //	 $window.location.reload(true);
+		 	 $window.location.reload(true);
 		$state.go('cities');
 		var state = state.State;
 	 window.localStorage.setItem('state',state);}
@@ -1934,7 +1935,7 @@ if(response.data[0].status == false){
 	
 }
 $scope.upgradeaccount = function(){
-	$window.location.reload(true);
+//	$window.location.reload(true);
 	$state.go('upgradeaccount');
 }
 $scope.careerdetail = function(){
@@ -1978,7 +1979,7 @@ $scope.membermessages = function(){
 		$state.go('career-profile');
 	}
 	$scope.profile = function(){
-		$window.location.reload(true);
+	//	$window.location.reload(true);
 		$state.go('business-profile');
 	}
 	$scope.matrimony = function(){
@@ -1999,7 +2000,7 @@ $scope.membermessages = function(){
 	//	window.localStorage.removeItem('username');
 		window.localStorage.clear();
        $state.go('login');
-	   $window.location.reload(true);
+	  // $window.location.reload(true);
        } else {
          console.log('not sure');
        }
@@ -3150,11 +3151,11 @@ function downloadReceipt(args) {
       }, 2000); 
 	
 		$scope.membersdetail  = function(member){
-	  console.log(member.id);
+	  console.log(member.id, senderid);
 	   
 	  $scope.modal.show();
 	  
-	  $http.post('http://listingapp.ssalumni.com/api/user/matrimonial_profile', {id:member.id}).success(function(res){
+	  $http.post('http://listingapp.ssalumni.com/api/user/matrimonial_profile', {id:member.id, user_id : senderid}).success(function(res){
 		console.log(res);
 		$scope.postingdate = res[0].posted_by;
 		$scope.dob = res[0].dob;
